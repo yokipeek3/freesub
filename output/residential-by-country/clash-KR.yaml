@@ -1,0 +1,73 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - yoki
+  type: ss
+  server: 115.161.136.145
+  port: 10099
+  cipher: chacha20-ietf-poly1305
+  password: '12242'
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - yoki
+  type: vless
+  server: 172.67.152.71
+  port: 8880
+  uuid: 5bbf0601-8431-45f6-a4e9-a1e8b44c0055
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: misty-mouse-141d.177-f18.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - yoki
+  type: vless
+  server: 162.159.140.78
+  port: 8880
+  uuid: c18fd69e-92ba-446e-981b-213dbb551593
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: billowing-wind-5b29.133-323.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - yoki
+  type: vless
+  server: 188.114.97.6
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - yoki
+- name: AUTO
+  type: url-test
+  url: https://www.google.com/generate_204
+  interval: 300
+  proxies:
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - yoki
+rules:
+- MATCH,PROXIES

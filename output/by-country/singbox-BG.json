@@ -6,22 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 BG 01 - xiaohe",
-        "🇧🇬 BG 02 - xiaohe",
-        "🇧🇬 BG 03 - xiaohe",
-        "🇧🇬 BG 04 - xiaohe",
-        "🇧🇬 BG 05 - xiaohe"
+        "🇧🇬 BG 01 - yoki",
+        "🇧🇬 BG 02 - yoki",
+        "🇧🇬 BG 03 - yoki",
+        "🇧🇬 BG 04 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 BG 01 - xiaohe",
-        "🇧🇬 BG 02 - xiaohe",
-        "🇧🇬 BG 03 - xiaohe",
-        "🇧🇬 BG 04 - xiaohe",
-        "🇧🇬 BG 05 - xiaohe"
+        "🇧🇬 BG 01 - yoki",
+        "🇧🇬 BG 02 - yoki",
+        "🇧🇬 BG 03 - yoki",
+        "🇧🇬 BG 04 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },

@@ -4,16 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 BG 01 - xiaohe
-  type: vless
-  server: 192.145.31.5
-  port: 8443
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 192.145.31.5
-- name: 🇧🇬 BG 02 - xiaohe
+- name: 🇧🇬 BG 01 - yoki
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -22,7 +13,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 03 - xiaohe
+- name: 🇧🇬 BG 02 - yoki
   type: vless
   server: 192.145.31.5
   port: 8443
@@ -31,7 +22,7 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: neth9.lunariai.ru
-- name: 🇧🇬 BG 04 - xiaohe
+- name: 🇧🇬 BG 03 - yoki
   type: vless
   server: 192.145.31.5
   port: 443
@@ -44,38 +35,32 @@ proxies:
     path: /
     headers:
       Host: 192.145.31.5
-- name: 🇧🇬 BG 05 - xiaohe
+- name: 🇧🇬 BG 04 - yoki
   type: vless
   server: 192.145.31.5
-  port: 443
+  port: 8443
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 192.145.31.5
+  servername: neth9.lunariai.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 BG 01 - xiaohe
-  - 🇧🇬 BG 02 - xiaohe
-  - 🇧🇬 BG 03 - xiaohe
-  - 🇧🇬 BG 04 - xiaohe
-  - 🇧🇬 BG 05 - xiaohe
+  - 🇧🇬 BG 01 - yoki
+  - 🇧🇬 BG 02 - yoki
+  - 🇧🇬 BG 03 - yoki
+  - 🇧🇬 BG 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 BG 01 - xiaohe
-  - 🇧🇬 BG 02 - xiaohe
-  - 🇧🇬 BG 03 - xiaohe
-  - 🇧🇬 BG 04 - xiaohe
-  - 🇧🇬 BG 05 - xiaohe
+  - 🇧🇬 BG 01 - yoki
+  - 🇧🇬 BG 02 - yoki
+  - 🇧🇬 BG 03 - yoki
+  - 🇧🇬 BG 04 - yoki
 rules:
 - MATCH,PROXIES

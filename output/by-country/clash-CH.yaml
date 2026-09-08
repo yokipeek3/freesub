@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇭 CH 01 - xiaohe
+- name: 🇨🇭 CH 01 - yoki
   type: vless
   server: 188.114.97.6
   port: 8080
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇭 CH 01 - xiaohe
+  - 🇨🇭 CH 01 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇭 CH 01 - xiaohe
+  - 🇨🇭 CH 01 - yoki
 rules:
 - MATCH,PROXIES
