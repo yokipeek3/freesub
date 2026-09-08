@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇸🇨 SC 01 - yoki",
+        "🇸🇨 SC 02 - yoki",
+        "🇸🇨 SC 03 - yoki",
+        "🇸🇨 SC 04 - yoki",
+        "🇸🇨 SC 05 - yoki",
+        "🇸🇨 SC 06 - yoki",
+        "🇸🇨 SC 07 - yoki",
+        "🇸🇨 SC 08 - yoki",
+        "🇸🇨 SC 09 - yoki",
+        "🇸🇨 SC 10 - yoki",
+        "🇸🇨 SC 11 - yoki",
+        "🇸🇨 SC 12 - yoki",
+        "🇸🇨 SC 13 - yoki",
+        "🇸🇨 SC 14 - yoki",
+        "🇸🇨 SC 15 - yoki",
+        "🇸🇨 SC 16 - yoki",
+        "🇸🇨 SC 17 - yoki",
+        "🇸🇨 SC 18 - yoki",
+        "🇸🇨 SC 19 - yoki",
+        "🇸🇨 SC 20 - yoki",
+        "🇸🇨 SC 21 - yoki"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇸🇨 SC 01 - yoki",
+        "🇸🇨 SC 02 - yoki",
+        "🇸🇨 SC 03 - yoki",
+        "🇸🇨 SC 04 - yoki",
+        "🇸🇨 SC 05 - yoki",
+        "🇸🇨 SC 06 - yoki",
+        "🇸🇨 SC 07 - yoki",
+        "🇸🇨 SC 08 - yoki",
+        "🇸🇨 SC 09 - yoki",
+        "🇸🇨 SC 10 - yoki",
+        "🇸🇨 SC 11 - yoki",
+        "🇸🇨 SC 12 - yoki",
+        "🇸🇨 SC 13 - yoki",
+        "🇸🇨 SC 14 - yoki",
+        "🇸🇨 SC 15 - yoki",
+        "🇸🇨 SC 16 - yoki",
+        "🇸🇨 SC 17 - yoki",
+        "🇸🇨 SC 18 - yoki",
+        "🇸🇨 SC 19 - yoki",
+        "🇸🇨 SC 20 - yoki",
+        "🇸🇨 SC 21 - yoki"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ proxies:
   type: vless
   server: 58.153.148.126
   port: 443
-  uuid: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  uuid: bdf3e15e-c64c-11ea-82ef-f23c9164ca5d
   udp: true
   tls: true
   skip-cert-verify: true
@@ -16,17 +16,41 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - yoki
+  type: vmess
+  server: dog-hk.kunlun01dns.com
+  port: 21021
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - yoki
+  type: vmess
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - yoki
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - yoki
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - yoki
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - yoki
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - yoki
 rules:
 - MATCH,PROXIES

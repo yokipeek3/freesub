@@ -7,22 +7,17 @@ proxies:
 - name: 🇪🇪 EE 01 - yoki
   type: vless
   server: 94.183.170.135
-  port: 8443
+  port: 443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: estproxy4.lockdwn.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 02 - yoki
-  type: vless
-  server: 94.183.170.248
-  port: 8443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy3.lockdwn.com
-- name: 🇪🇪 EE 03 - yoki
   type: vless
   server: 94.183.170.135
   port: 8443
@@ -31,6 +26,19 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 03 - yoki
+  type: vless
+  server: 94.183.170.135
+  port: 443
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.170.135
 - name: 🇪🇪 EE 04 - yoki
   type: vless
   server: 94.183.170.135
@@ -40,112 +48,6 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
-- name: 🇪🇪 EE 05 - yoki
-  type: vless
-  server: estproxy3.lockdwn.com
-  port: 8443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy3.lockdwn.com
-- name: 🇪🇪 EE 06 - yoki
-  type: vless
-  server: 94.183.170.248
-  port: 8443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy3.lockdwn.com
-- name: 🇪🇪 EE 07 - yoki
-  type: vless
-  server: 94.183.170.248
-  port: 443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.248
-- name: 🇪🇪 EE 08 - yoki
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 09 - yoki
-  type: vless
-  server: 94.183.170.248
-  port: 8443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy3.lockdwn.com
-- name: 🇪🇪 EE 10 - yoki
-  type: vless
-  server: 94.183.170.248
-  port: 8443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy3.lockdwn.com
-- name: 🇪🇪 EE 11 - yoki
-  type: vless
-  server: 94.183.170.248
-  port: 8443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy3.lockdwn.com
-- name: 🇪🇪 EE 12 - yoki
-  type: vless
-  server: 94.183.170.248
-  port: 8443
-  uuid: 9d9e3421-5652-4804-85ba-238355b948ab
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: estproxy3.lockdwn.com
-- name: 🇪🇪 EE 13 - yoki
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 EE 14 - yoki
-  type: vless
-  server: 94.183.170.135
-  port: 443
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
 proxy-groups:
 - name: PROXIES
   type: select
@@ -155,16 +57,6 @@ proxy-groups:
   - 🇪🇪 EE 02 - yoki
   - 🇪🇪 EE 03 - yoki
   - 🇪🇪 EE 04 - yoki
-  - 🇪🇪 EE 05 - yoki
-  - 🇪🇪 EE 06 - yoki
-  - 🇪🇪 EE 07 - yoki
-  - 🇪🇪 EE 08 - yoki
-  - 🇪🇪 EE 09 - yoki
-  - 🇪🇪 EE 10 - yoki
-  - 🇪🇪 EE 11 - yoki
-  - 🇪🇪 EE 12 - yoki
-  - 🇪🇪 EE 13 - yoki
-  - 🇪🇪 EE 14 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -174,15 +66,5 @@ proxy-groups:
   - 🇪🇪 EE 02 - yoki
   - 🇪🇪 EE 03 - yoki
   - 🇪🇪 EE 04 - yoki
-  - 🇪🇪 EE 05 - yoki
-  - 🇪🇪 EE 06 - yoki
-  - 🇪🇪 EE 07 - yoki
-  - 🇪🇪 EE 08 - yoki
-  - 🇪🇪 EE 09 - yoki
-  - 🇪🇪 EE 10 - yoki
-  - 🇪🇪 EE 11 - yoki
-  - 🇪🇪 EE 12 - yoki
-  - 🇪🇪 EE 13 - yoki
-  - 🇪🇪 EE 14 - yoki
 rules:
 - MATCH,PROXIES
