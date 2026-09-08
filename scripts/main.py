@@ -722,7 +722,7 @@ def format_node_group(nodes_list, res_tag_force=False):
         
         is_res = item["is_residential"] or res_tag_force
         tag = " (家宽)" if is_res else ""
-        node_name = f"{flag} {c_name} {idx:02d}{tag} - xiaohe"
+        node_name = f"{flag} {c_name} {idx:02d}{tag} - yoki"
         
         new_proxy = dict(item["clash_proxy"])
         new_proxy["name"] = node_name
@@ -904,7 +904,7 @@ export default {
 
     readme_content = f"""# 🚀 免费节点自动测活订阅池 (含真实家宽/住宅IP甄选)
 
-> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - xiaohe`  
+> 👤 **定制规范命名**: 所有订阅节点均重命名为 `国旗 地区 序号 (家宽) - yoki`  
 > ⚡ **真实可用保障**: 所有节点由 `Xray-core` 建立实际代理隧道并完成真实 HTTPS 双向传输握手，拒绝虚假通畅与死节点。无论是通过免翻 CDN 直链还是官方原生 Raw 直链拉取，节点命名格式完全一致。
 
 ---
