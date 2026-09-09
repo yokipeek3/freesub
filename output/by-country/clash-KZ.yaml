@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 KZ 01 - yoki
+  type: ss
+  server: 94.198.220.183
+  port: 64674
+  cipher: chacha20-ietf-poly1305
+  password: s8LbJCgUiGXeCKVc63tHJP
+  udp: true
+- name: 🇰🇿 KZ 02 - yoki
   type: vless
   server: 77.73.232.61
   port: 19747
@@ -16,19 +23,31 @@ proxies:
     public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 02 - yoki
+- name: 🇰🇿 KZ 03 - yoki
   type: vless
-  server: 178.236.16.98
-  port: 35728
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  server: 77.73.232.61
+  port: 19747
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 KZ 03 - yoki
+- name: 🇰🇿 KZ 04 - yoki
+  type: vless
+  server: 77.73.232.61
+  port: 19747
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 KZ 05 - yoki
   type: vless
   server: 83.222.23.81
   port: 38065
@@ -40,6 +59,18 @@ proxies:
     public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 KZ 06 - yoki
+  type: vless
+  server: 178.236.16.98
+  port: 35728
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +79,9 @@ proxy-groups:
   - 🇰🇿 KZ 01 - yoki
   - 🇰🇿 KZ 02 - yoki
   - 🇰🇿 KZ 03 - yoki
+  - 🇰🇿 KZ 04 - yoki
+  - 🇰🇿 KZ 05 - yoki
+  - 🇰🇿 KZ 06 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +90,8 @@ proxy-groups:
   - 🇰🇿 KZ 01 - yoki
   - 🇰🇿 KZ 02 - yoki
   - 🇰🇿 KZ 03 - yoki
+  - 🇰🇿 KZ 04 - yoki
+  - 🇰🇿 KZ 05 - yoki
+  - 🇰🇿 KZ 06 - yoki
 rules:
 - MATCH,PROXIES
