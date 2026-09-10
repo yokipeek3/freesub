@@ -6,44 +6,40 @@ log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - yoki
   type: vless
-  server: 47.238.210.5
-  port: 13779
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-  servername: tesla.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - yoki
-  type: vless
-  server: bdd23461-tla000-tvvhcz-tl32.hk3.hyhuawei.com
+  server: 203.218.231.156
   port: 443
-  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  uuid: fbf91120-50ba-11ef-a203-f23c91cfbbc9
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - yoki
-  type: vmess
-  server: 47.83.19.148
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - yoki
+  type: vless
+  server: a95a660c-tla000-tpw4i4-1pckg.hk3.hyhuawei.com
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - yoki
+  type: vless
+  server: a1a748ee-tlheo0-tls5or-6gn6.hk3.hyhuawei.com
+  port: 443
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - yoki
   type: vless
   server: 9ed08d0c-tlheo0-tvb36r-1qwom.hk3.hyhuawei.com
@@ -57,22 +53,17 @@ proxies:
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - yoki
-  type: vless
-  server: ac35c80b-tla000-tpmc23-1s3lb.hk3.hyhuawei.com
-  port: 443
-  uuid: fbf91120-50ba-11ef-a203-f23c91cfbbc9
+  type: ss
+  server: 212.192.15.86
+  port: 20111
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - yoki
   type: vless
   server: 203.218.231.156
   port: 443
-  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
   udp: true
   tls: true
   skip-cert-verify: true
@@ -81,168 +72,6 @@ proxies:
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - yoki
-  type: vless
-  server: 619c9ae2-tla000-tls5or-6gn6.hk3.hyhuawei.com
-  port: 443
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - yoki
-  type: vless
-  server: 619c9ae2-tla000-tls5or-6gn6.hk3.hyhuawei.com
-  port: 443
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - yoki
-  type: vless
-  server: 203.218.231.156
-  port: 443
-  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - yoki
-  type: vless
-  server: 0deecae9-tl4g00-tls5or-6gn6.hk3.hyhuawei.com
-  port: 443
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - yoki
-  type: vless
-  server: 619c9ae2-tla000-tls5or-6gn6.hk3.hyhuawei.com
-  port: 443
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - yoki
-  type: ss
-  server: 212.192.15.86
-  port: 20111
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - yoki
-  type: vless
-  server: 203.218.231.156
-  port: 443
-  uuid: fbf91120-50ba-11ef-a203-f23c91cfbbc9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - yoki
-  type: vless
-  server: 203.218.231.156
-  port: 443
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - yoki
-  type: vless
-  server: a95a660c-tla000-tpw4i4-1pckg.hk3.hyhuawei.com
-  port: 443
-  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - yoki
-  type: ss
-  server: 103.136.150.165
-  port: 8388
-  cipher: aes-256-gcm
-  password: lNyf18SXvwc2CruY
-  udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - yoki
-  type: vless
-  server: bdd23461-tla000-tvvhcz-tl32.hk3.hyhuawei.com
-  port: 443
-  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - yoki
-  type: vless
-  server: ac35c80b-tla000-tpmc23-1s3lb.hk3.hyhuawei.com
-  port: 443
-  uuid: fbf91120-50ba-11ef-a203-f23c91cfbbc9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - yoki
-  type: vmess
-  server: qtkdr8jxe3wefxjm.v.3dns.vip
-  port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - yoki
-  type: vless
-  server: 203.218.231.156
-  port: 443
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - yoki
   type: vless
   server: ac35c80b-tla000-tpmc23-1s3lb.hk3.hyhuawei.com
   port: 443
@@ -254,7 +83,7 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
   client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 22 - yoki
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - yoki
   type: vless
   server: 203.218.231.156
   port: 443
@@ -265,12 +94,12 @@ proxies:
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 23 - yoki
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - yoki
   type: vless
-  server: 186b6f53-tla000-tvb36r-1qwom.hk3.hyhuawei.com
+  server: 203.218.231.156
   port: 443
-  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
@@ -278,9 +107,49 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 24 - yoki
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - yoki
   type: vless
-  server: 203.218.231.156
+  server: bdd23461-tla000-tvvhcz-tl32.hk3.hyhuawei.com
+  port: 443
+  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - yoki
+  type: vless
+  server: 619c9ae2-tla000-tls5or-6gn6.hk3.hyhuawei.com
+  port: 443
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - yoki
+  type: vmess
+  server: mtckundigepwu3up.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: mtckundigepwu3up.v.3dns.vip
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: mtckundigepwu3up.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - yoki
+  type: vless
+  server: a95a660c-tla000-tpw4i4-1pckg.hk3.hyhuawei.com
   port: 443
   uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
   udp: true
@@ -289,20 +158,8 @@ proxies:
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 25 - yoki
-  type: vless
-  server: 0cd6e0e6-tlheo0-tphvvu-gacy.hk3.hyhuawei.com
-  port: 443
-  uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 26 - yoki
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - yoki
   type: vmess
   server: 47.86.107.119
   port: 443
@@ -318,23 +175,43 @@ proxies:
     path: /ws-vmess
     headers:
       Host: lcv8v9l7OyamxxfZ.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 27 - yoki
-  type: vmess
-  server: u2frxj0g13vdi0wo.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - yoki
+  type: vless
+  server: 203.218.231.156
   port: 443
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: u2frxj0g13vdi0wo.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: u2frxj0g13vdi0wo.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 28 - yoki
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - yoki
+  type: vless
+  server: 203.218.231.156
+  port: 443
+  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - yoki
+  type: vless
+  server: 203.218.231.156
+  port: 443
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - yoki
   type: vless
   server: 203.218.231.156
   port: 443
@@ -346,9 +223,21 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
   client-fingerprint: safari
-- name: 🇭🇰 中国香港 (Hong Kong) 29 - yoki
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - yoki
   type: vless
-  server: a1a748ee-tlheo0-tls5or-6gn6.hk3.hyhuawei.com
+  server: 203.218.231.156
+  port: 443
+  uuid: fbf91120-50ba-11ef-a203-f23c91cfbbc9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 20 - yoki
+  type: vless
+  server: 203.218.231.156
   port: 443
   uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
   udp: true
@@ -358,7 +247,67 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 30 - yoki
+- name: 🇭🇰 中国香港 (Hong Kong) 21 - yoki
+  type: vless
+  server: 203.218.231.156
+  port: 443
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 22 - yoki
+  type: vless
+  server: bdd23461-tla000-tvvhcz-tl32.hk3.hyhuawei.com
+  port: 443
+  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 23 - yoki
+  type: vless
+  server: 203.218.231.156
+  port: 443
+  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 24 - yoki
+  type: vless
+  server: 0deecae9-tl4g00-tls5or-6gn6.hk3.hyhuawei.com
+  port: 443
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 25 - yoki
+  type: vless
+  server: ac35c80b-tla000-tpmc23-1s3lb.hk3.hyhuawei.com
+  port: 443
+  uuid: fbf91120-50ba-11ef-a203-f23c91cfbbc9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 26 - yoki
   type: vmess
   server: u2frxj0g13vdi0wo.v.3dns.vip
   port: 443
@@ -374,67 +323,23 @@ proxies:
     path: /ws-vmess
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 31 - yoki
-  type: vless
-  server: 203.218.231.156
+- name: 🇭🇰 中国香港 (Hong Kong) 27 - yoki
+  type: vmess
+  server: www.shopify.com
   port: 443
-  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
+  uuid: d187a23a-76a9-4d55-84e3-ea3b8b222cbf
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 32 - yoki
-  type: vless
-  server: 203.218.231.156
-  port: 443
-  uuid: fbf91120-50ba-11ef-a203-f23c91cfbbc9
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 33 - yoki
-  type: vless
-  server: 203.218.231.156
-  port: 443
-  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 34 - yoki
-  type: vless
-  server: b83281e0-tlheo0-tvvhcz-tl32.hk3.hyhuawei.com
-  port: 443
-  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 35 - yoki
-  type: vless
-  server: 203.218.231.156
-  port: 443
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 36 - yoki
+  servername: dimensional-regularly-buildings-keys.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /d187a23a-76a9-4d55-84e3-ea3b8b222cbf-vm
+    headers:
+      Host: dimensional-regularly-buildings-keys.trycloudflare.com
+- name: 🇭🇰 中国香港 (Hong Kong) 28 - yoki
   type: vmess
   server: 8.218.184.4
   port: 443
@@ -450,11 +355,23 @@ proxies:
     path: /ws-vmess
     headers:
       Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 37 - yoki
+- name: 🇭🇰 中国香港 (Hong Kong) 29 - yoki
+  type: vless
+  server: 186b6f53-tla000-tvb36r-1qwom.hk3.hyhuawei.com
+  port: 443
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 30 - yoki
   type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
   alterId: 0
   cipher: auto
   udp: true
@@ -462,26 +379,46 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /arki
+    path: /
     headers:
       Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 38 - yoki
-  type: vmess
-  server: u2frxj0g13vdi0wo.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 31 - yoki
+  type: vless
+  server: 203.218.231.156
   port: 443
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: U2FRxj0G13vDI0Wo.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: U2FRxj0G13vDI0Wo.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 39 - yoki
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 32 - yoki
+  type: vless
+  server: 47.238.210.5
+  port: 13779
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 33 - yoki
+  type: vless
+  server: a95a660c-tla000-tpw4i4-1pckg.hk3.hyhuawei.com
+  port: 443
+  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 34 - yoki
   type: vless
   server: e7f2393f-tlheo0-tpw4i4-1pckg.hk3.hyhuawei.com
   port: 443
@@ -493,6 +430,34 @@ proxies:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
   servername: updates.cdn-apple.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 35 - yoki
+  type: vless
+  server: b83281e0-tlheo0-tvvhcz-tl32.hk3.hyhuawei.com
+  port: 443
+  uuid: 5c02ab88-7b9c-11ea-8fc9-f23c913c8d2b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 36 - yoki
+  type: vmess
+  server: i2psm3knof5qjjix.v.3dns.vip
+  port: 443
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -534,9 +499,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 34 - yoki
   - 🇭🇰 中国香港 (Hong Kong) 35 - yoki
   - 🇭🇰 中国香港 (Hong Kong) 36 - yoki
-  - 🇭🇰 中国香港 (Hong Kong) 37 - yoki
-  - 🇭🇰 中国香港 (Hong Kong) 38 - yoki
-  - 🇭🇰 中国香港 (Hong Kong) 39 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -578,8 +540,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 34 - yoki
   - 🇭🇰 中国香港 (Hong Kong) 35 - yoki
   - 🇭🇰 中国香港 (Hong Kong) 36 - yoki
-  - 🇭🇰 中国香港 (Hong Kong) 37 - yoki
-  - 🇭🇰 中国香港 (Hong Kong) 38 - yoki
-  - 🇭🇰 中国香港 (Hong Kong) 39 - yoki
 rules:
 - MATCH,PROXIES
