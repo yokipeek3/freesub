@@ -31,18 +31,6 @@ proxies:
     path: /proxyip=bpb.yousef.isegaro.comfp=chrome
     headers:
       Host: web-socket.tgdaosheng.ggff.net
-- name: 🇦🇪 阿联酋 (UAE) 03 - yoki
-  type: vless
-  server: 31.58.181.88
-  port: 8443
-  uuid: cc422436-e0e9-4f15-bfe8-db3d816e5527
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - yoki
   - 🇦🇪 阿联酋 (UAE) 02 - yoki
-  - 🇦🇪 阿联酋 (UAE) 03 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -58,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - yoki
   - 🇦🇪 阿联酋 (UAE) 02 - yoki
-  - 🇦🇪 阿联酋 (UAE) 03 - yoki
 rules:
 - MATCH,PROXIES
