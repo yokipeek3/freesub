@@ -23,18 +23,6 @@ proxies:
   servername: 195-162-69-203.sslip.io
 - name: 🇹🇷 土耳其 (Turkey) 03 - yoki
   type: vless
-  server: 151.241.226.201
-  port: 2053
-  uuid: e691b034-dfc9-4f22-80aa-6d4f6404a4df
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k5COjpopVNGzEuMb457zCrrZegSdBX-d8bg0G6HDsE4
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - yoki
-  type: vless
   server: sinavm.soft10.ir
   port: 443
   uuid: 69768555-bf07-4127-8ce5-eed7a0d0baba
@@ -55,7 +43,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - yoki
   - 🇹🇷 土耳其 (Turkey) 02 - yoki
   - 🇹🇷 土耳其 (Turkey) 03 - yoki
-  - 🇹🇷 土耳其 (Turkey) 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -64,6 +51,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - yoki
   - 🇹🇷 土耳其 (Turkey) 02 - yoki
   - 🇹🇷 土耳其 (Turkey) 03 - yoki
-  - 🇹🇷 土耳其 (Turkey) 04 - yoki
 rules:
 - MATCH,PROXIES
