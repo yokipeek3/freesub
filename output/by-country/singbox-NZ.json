@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - yoki"
+        "🇳🇿 NZ 01 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - yoki"
+        "🇳🇿 NZ 01 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },
