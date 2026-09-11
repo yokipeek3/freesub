@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 UZ 01 - yoki"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 UZ 01 - yoki"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },

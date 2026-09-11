@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 MY 01 - yoki
+  type: vmess
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+- name: 🇲🇾 MY 02 - yoki
   type: vless
   server: 38.60.168.98
   port: 2087
@@ -17,19 +32,6 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
-- name: 🇲🇾 MY 02 - yoki
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 2fb22d40-598f-4890-85a6-d69928b1fd55
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: odd-cloud-f2a1.73-12e.workers.dev
 - name: 🇲🇾 MY 03 - yoki
   type: vless
   server: 38.60.168.98
@@ -43,19 +45,6 @@ proxies:
     path: /db55c40bbc75
     headers:
       Host: 38.60.168.98
-- name: 🇲🇾 MY 04 - yoki
-  type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: 68662961-6c5f-48c1-b807-6398f3287dbc
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: polished-meadow-2ac5.228-76d.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +53,6 @@ proxy-groups:
   - 🇲🇾 MY 01 - yoki
   - 🇲🇾 MY 02 - yoki
   - 🇲🇾 MY 03 - yoki
-  - 🇲🇾 MY 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -73,6 +61,5 @@ proxy-groups:
   - 🇲🇾 MY 01 - yoki
   - 🇲🇾 MY 02 - yoki
   - 🇲🇾 MY 03 - yoki
-  - 🇲🇾 MY 04 - yoki
 rules:
 - MATCH,PROXIES

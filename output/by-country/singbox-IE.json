@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇪 IE 01 - yoki",
+        "🇮🇪 IE 02 - yoki",
+        "🇮🇪 IE 03 - yoki"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇪 IE 01 - yoki",
+        "🇮🇪 IE 02 - yoki",
+        "🇮🇪 IE 03 - yoki"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
