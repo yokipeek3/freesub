@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 MX 01 - yoki"
+        "🇰🇿 KZ 01 - yoki",
+        "🇰🇿 KZ 02 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 MX 01 - yoki"
+        "🇰🇿 KZ 01 - yoki",
+        "🇰🇿 KZ 02 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },
