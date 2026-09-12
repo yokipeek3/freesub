@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 PL 01 - yoki
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
+- name: 🇵🇱 PL 02 - yoki
   type: vless
   server: 94.183.209.59
   port: 443
@@ -17,7 +24,7 @@ proxies:
     path: /
     headers:
       Host: 94.183.209.59
-- name: 🇵🇱 PL 02 - yoki
+- name: 🇵🇱 PL 03 - yoki
   type: vless
   server: 94.183.209.58
   port: 443
@@ -30,13 +37,19 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 PL 03 - yoki
-  type: ss
-  server: 194.61.121.93
-  port: 7538
-  cipher: chacha20-ietf-poly1305
-  password: U9YAoqBgg5VyGBc6vQv1sN
+- name: 🇵🇱 PL 04 - yoki
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 94.183.209.58
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +58,7 @@ proxy-groups:
   - 🇵🇱 PL 01 - yoki
   - 🇵🇱 PL 02 - yoki
   - 🇵🇱 PL 03 - yoki
+  - 🇵🇱 PL 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -53,5 +67,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - yoki
   - 🇵🇱 PL 02 - yoki
   - 🇵🇱 PL 03 - yoki
+  - 🇵🇱 PL 04 - yoki
 rules:
 - MATCH,PROXIES
