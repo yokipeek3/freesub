@@ -4,45 +4,45 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇿 UZ 01 - yoki
+- name: 🇸🇨 SC 01 - yoki
   type: vless
-  server: 189.74.97.47
-  port: 2087
-  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /755276b33b6f
+    path: /
     headers:
-      Host: 189.74.97.47
-- name: 🇺🇿 UZ 02 - yoki
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇸🇨 SC 02 - yoki
   type: vless
-  server: 189.74.97.47
-  port: 2087
-  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  server: 172.64.52.6
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /755276b33b6f
+    path: /?ed=2560security=tls
     headers:
-      Host: 189.74.97.47
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇿 UZ 01 - yoki
-  - 🇺🇿 UZ 02 - yoki
+  - 🇸🇨 SC 01 - yoki
+  - 🇸🇨 SC 02 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇿 UZ 01 - yoki
-  - 🇺🇿 UZ 02 - yoki
+  - 🇸🇨 SC 01 - yoki
+  - 🇸🇨 SC 02 - yoki
 rules:
 - MATCH,PROXIES
