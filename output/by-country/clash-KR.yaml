@@ -17,18 +17,46 @@ proxies:
 - name: 🇰🇷 韩国 (South Korea) 02 - yoki
   type: ss
   server: 141.164.45.187
-  port: 6697
+  port: 5001
   cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  password: Y6R9pAtvxxzmGC
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 03 - yoki
   type: ss
   server: 141.164.45.187
-  port: 5498
+  port: 8008
   cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
+  password: XKFKl2rULjIp74
   udp: true
 - name: 🇰🇷 韩国 (South Korea) 04 - yoki
+  type: ss
+  server: 141.164.45.187
+  port: 6697
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 05 - yoki
+  type: ss
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 06 - yoki
+  type: ss
+  server: 141.164.45.187
+  port: 8888
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 07 - yoki
+  type: ss
+  server: 141.164.45.187
+  port: 8091
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 08 - yoki
   type: vmess
   server: 140.238.2.250
   port: 443
@@ -38,31 +66,14 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 - yoki
-  type: ss
-  server: 141.164.45.187
-  port: 5001
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 06 - yoki
+- name: 🇰🇷 韩国 (South Korea) 09 - yoki
   type: ss
   server: 141.164.45.187
   port: 2376
   cipher: aes-256-gcm
   password: faBAoD54k87UJG7
   udp: true
-- name: 🇰🇷 韩国 (South Korea) 07 - yoki
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - yoki
+- name: 🇰🇷 韩国 (South Korea) 10 - yoki
   type: vless
   server: 151.245.106.49
   port: 2053
@@ -74,6 +85,16 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 11 - yoki
+  type: vmess
+  server: 140.238.2.250
+  port: 443
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +108,9 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - yoki
   - 🇰🇷 韩国 (South Korea) 07 - yoki
   - 🇰🇷 韩国 (South Korea) 08 - yoki
+  - 🇰🇷 韩国 (South Korea) 09 - yoki
+  - 🇰🇷 韩国 (South Korea) 10 - yoki
+  - 🇰🇷 韩国 (South Korea) 11 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -100,5 +124,8 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 06 - yoki
   - 🇰🇷 韩国 (South Korea) 07 - yoki
   - 🇰🇷 韩国 (South Korea) 08 - yoki
+  - 🇰🇷 韩国 (South Korea) 09 - yoki
+  - 🇰🇷 韩国 (South Korea) 10 - yoki
+  - 🇰🇷 韩国 (South Korea) 11 - yoki
 rules:
 - MATCH,PROXIES
