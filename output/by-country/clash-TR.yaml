@@ -5,51 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - yoki
-  type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  type: ss
+  server: 185.39.204.3
+  port: 8098
+  cipher: chacha20-ietf-poly1305
+  password: PluSKSrbtxTvlVv7BOUwn4
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
 - name: 🇹🇷 土耳其 (Turkey) 02 - yoki
   type: vless
-  server: shop.neexbyte.ir
-  port: 8443
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  server: connect3.nyxserver.ir
+  port: 8444
+  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shop.neexbyte.ir
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shop.neexbyte.ir
+  servername: connect3.nyxserver.ir
 - name: 🇹🇷 土耳其 (Turkey) 03 - yoki
-  type: vless
-  server: connect3.nyxserver.ir
-  port: 8444
-  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
+  type: ss
+  server: 188.132.174.236
+  port: 1080
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: connect3.nyxserver.ir
-- name: 🇹🇷 土耳其 (Turkey) 04 - yoki
-  type: vless
-  server: connect3.nyxserver.ir
-  port: 8444
-  uuid: 0b39a009-2a2a-4035-ba87-cc82894f8e21
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: connect3.nyxserver.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +35,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - yoki
   - 🇹🇷 土耳其 (Turkey) 02 - yoki
   - 🇹🇷 土耳其 (Turkey) 03 - yoki
-  - 🇹🇷 土耳其 (Turkey) 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -67,6 +43,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - yoki
   - 🇹🇷 土耳其 (Turkey) 02 - yoki
   - 🇹🇷 土耳其 (Turkey) 03 - yoki
-  - 🇹🇷 土耳其 (Turkey) 04 - yoki
 rules:
 - MATCH,PROXIES

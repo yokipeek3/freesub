@@ -5,20 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  type: vless
-  server: 78.159.247.246
-  port: 443
-  uuid: 1852b02c-1828-40eb-81ff-4de3d097cb35
+  type: ss
+  server: 46.17.40.234
+  port: 50111
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
   udp: true
-  tls: true
+- name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
+  type: vless
+  server: 108.162.198.178
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
   skip-cert-verify: true
-  servername: sb2.hat.onl
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: sb2.hat.onl
-- name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 - yoki
+  type: vless
+  server: 172.64.32.108
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - yoki
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - yoki
   type: vless
   server: 46.8.200.91
   port: 443
@@ -32,68 +58,7 @@ proxies:
     path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  type: ss
-  server: 195.133.23.200
-  port: 50111
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - yoki
-  type: ss
-  server: 46.17.40.234
-  port: 50111
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - yoki
-  type: vless
-  server: 162.159.43.187
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 06 - yoki
-  type: vless
-  server: 172.67.149.222
-  port: 443
-  uuid: 995d8fdb-36e0-cf6e-e9e8-88ead972fce2
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: eagle-panel.roya6777.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws/995d8fdb-36e0-cf6e-e9e8-88ead972fce2
-    headers:
-      Host: eagle-panel.roya6777.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 07 - yoki
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 08 - yoki
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - yoki
   type: vless
   server: 78.159.247.246
   port: 443
@@ -118,9 +83,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - yoki
   - 🇷🇺 俄罗斯 (Russia) 05 - yoki
   - 🇷🇺 俄罗斯 (Russia) 06 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 07 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 08 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 09 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -132,8 +94,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04 - yoki
   - 🇷🇺 俄罗斯 (Russia) 05 - yoki
   - 🇷🇺 俄罗斯 (Russia) 06 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 07 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 08 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 09 - yoki
 rules:
 - MATCH,PROXIES
