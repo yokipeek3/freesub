@@ -12,16 +12,19 @@ proxies:
   password: itzvpn@321
   udp: true
 - name: 🇫🇷 法国 (France) 02 - yoki
-  type: vmess
-  server: 162.19.204.71
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 149.202.58.99
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: 149.202.58.99
 - name: 🇫🇷 法国 (France) 03 - yoki
   type: vless
   server: 149.202.58.99
@@ -35,29 +38,16 @@ proxies:
   ws-opts:
     path: /vws/
     headers:
-      Host: 149.202.58.99
+      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 04 - yoki
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 15.236.17.252
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
-  network: ws
-  ws-opts:
-    path: /vws/
-    headers:
-      Host: bab-6.site
 - name: 🇫🇷 法国 (France) 05 - yoki
-  type: ss
-  server: 51.83.192.80
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇫🇷 法国 (France) 06 - yoki
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -70,7 +60,53 @@ proxies:
     path: /
     headers:
       Host: 45.144.28.39
+- name: 🇫🇷 法国 (France) 06 - yoki
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
 - name: 🇫🇷 法国 (France) 07 - yoki
+  type: vless
+  server: 158.180.231.216
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 08 - yoki
+  type: vmess
+  server: 162.19.204.71
+  port: 1234
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇫🇷 法国 (France) 09 - yoki
+  type: vless
+  server: 81.95.4.189
+  port: 443
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: bab-6.site
+  network: ws
+  ws-opts:
+    path: /vws/
+    headers:
+      Host: bab-6.site
+- name: 🇫🇷 法国 (France) 10 - yoki
   type: vless
   server: 45.144.28.39
   port: 2096
@@ -83,32 +119,16 @@ proxies:
     path: /
     headers:
       Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 08 - yoki
-  type: vless
-  server: 51.38.82.1
-  port: 443
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+- name: 🇫🇷 法国 (France) 11 - yoki
+  type: ss
+  server: 79.137.207.190
+  port: 2
+  cipher: chacha20-ietf-poly1305
+  password: 9ri2bpxWs4FHXRjlhTFlQQ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 09 - yoki
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-- name: 🇫🇷 法国 (France) 10 - yoki
+- name: 🇫🇷 法国 (France) 12 - yoki
   type: vless
-  server: usejh2.neobo-tooth.ru
+  server: 45.144.28.39
   port: 2096
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
@@ -118,32 +138,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: usejh2.neobo-tooth.ru
-- name: 🇫🇷 法国 (France) 11 - yoki
+      Host: 45.144.28.39
+- name: 🇫🇷 法国 (France) 13 - yoki
   type: vless
-  server: 149.202.58.99
-  port: 443
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  server: 152.228.162.19
+  port: 80
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: bab-6.site
   network: ws
   ws-opts:
-    path: /vws/
+    path: /vless/
     headers:
-      Host: 149.202.58.99
-- name: 🇫🇷 法国 (France) 12 - yoki
-  type: vmess
-  server: 141.95.65.9
-  port: 1234
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
+      Host: akamaized.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,6 +169,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - yoki
   - 🇫🇷 法国 (France) 11 - yoki
   - 🇫🇷 法国 (France) 12 - yoki
+  - 🇫🇷 法国 (France) 13 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -178,5 +187,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - yoki
   - 🇫🇷 法国 (France) 11 - yoki
   - 🇫🇷 法国 (France) 12 - yoki
+  - 🇫🇷 法国 (France) 13 - yoki
 rules:
 - MATCH,PROXIES
