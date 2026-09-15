@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - yoki
+  type: ss
+  server: jp-2.gsafevpnapi.com
+  port: 31870
+  cipher: aes-256-gcm
+  password: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
+  udp: true
+- name: 🇯🇵 日本 (Japan) 02 - yoki
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
@@ -16,9 +23,28 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 02 - yoki
+- name: 🇯🇵 日本 (Japan) 03 - yoki
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇯🇵 日本 (Japan) 04 - yoki
   type: vless
-  server: 162.159.254.3
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 05 - yoki
+  type: vless
+  server: 172.67.156.147
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   udp: true
@@ -30,47 +56,18 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 03 - yoki
-  type: ss
-  server: 18.182.44.185
-  port: 31870
-  cipher: aes-256-gcm
-  password: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  udp: true
-- name: 🇯🇵 日本 (Japan) 04 - yoki
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 05 - yoki
+- name: 🇯🇵 日本 (Japan) 06 - yoki
   type: ss
   server: 84.247.155.196
-  port: 443
+  port: 80
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
   udp: true
-- name: 🇯🇵 日本 (Japan) 06 - yoki
-  type: vless
-  server: 137.220.221.179
-  port: 443
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-  udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 07 - yoki
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇯🇵 日本 (Japan) 08 - yoki
   type: vless
-  server: jp-1.gsafevpnapi.com
+  server: 18.182.44.185
   port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
   udp: true
   tls: true
   skip-cert-verify: true
@@ -78,10 +75,10 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 09 - yoki
+- name: 🇯🇵 日本 (Japan) 08 - yoki
   type: vless
-  server: 210.152.85.154
-  port: 19364
+  server: 207.148.99.230
+  port: 443
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -89,14 +86,42 @@ proxies:
   servername: cdn8848.776676.xyz
   network: ws
   ws-opts:
-    path: /collect/user/products?ed=2560
+    path: /test/company/library?ed=2560
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇯🇵 日本 (Japan) 09 - yoki
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 10 - yoki
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 11 - yoki
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
   udp: true
   tls: true
   skip-cert-verify: true
@@ -104,18 +129,11 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 11 - yoki
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
 - name: 🇯🇵 日本 (Japan) 12 - yoki
   type: vless
-  server: 18.182.44.185
+  server: jp-1.gsafevpnapi.com
   port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  uuid: 5f82dcfd-cab5-4b71-91c6-8b6fb4f76c55
   udp: true
   tls: true
   skip-cert-verify: true
@@ -131,17 +149,12 @@ proxies:
   password: shadowsocks
   udp: true
 - name: 🇯🇵 日本 (Japan) 14 - yoki
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: safari
 - name: 🇯🇵 日本 (Japan) 15 - yoki
   type: vless
   server: 137.220.221.179
@@ -152,9 +165,48 @@ proxies:
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 16 - yoki
   type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 17 - yoki
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+- name: 🇯🇵 日本 (Japan) 18 - yoki
+  type: vmess
+  server: 168.110.60.104
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 19 - yoki
+  type: vless
+  server: 162.159.254.3
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 20 - yoki
+  type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
   udp: true
   tls: true
   skip-cert-verify: true
@@ -162,14 +214,57 @@ proxies:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
   client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 17 - yoki
-  type: ss
-  server: jp-2.gsafevpnapi.com
-  port: 31870
-  cipher: aes-256-gcm
-  password: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+- name: 🇯🇵 日本 (Japan) 21 - yoki
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
   udp: true
-- name: 🇯🇵 日本 (Japan) 18 - yoki
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 22 - yoki
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 23 - yoki
+  type: vless
+  server: 137.220.221.179
+  port: 443
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 24 - yoki
+  type: vmess
+  server: oc.imfun.fun
+  port: 18112
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - yoki
+  type: vless
+  server: jp-1.gsafevpnapi.com
+  port: 20270
+  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+  servername: www.yahoo.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 26 - yoki
   type: vless
   server: 104.21.70.21
   port: 443
@@ -183,47 +278,19 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 - yoki
-  type: vless
-  server: 207.148.99.230
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cdn8848.776676.xyz
-  network: ws
-  ws-opts:
-    path: /test/company/library?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇯🇵 日本 (Japan) 20 - yoki
+- name: 🇯🇵 日本 (Japan) 27 - yoki
   type: vless
   server: jp-1.gsafevpnapi.com
   port: 20270
-  uuid: 5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0
+  uuid: e9e24ed8-b007-4e29-b54f-1ece641e60fb
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
     public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
   servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 21 - yoki
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 22 - yoki
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 28 - yoki
   type: vless
   server: 137.220.221.179
   port: 443
@@ -231,62 +298,7 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23 - yoki
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 24 - yoki
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 25 - yoki
-  type: vless
-  server: jp-1.gsafevpnapi.com
-  port: 20270
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 26 - yoki
-  type: vmess
-  server: 45.32.57.118
-  port: 4433
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 27 - yoki
-  type: ss
-  server: jp-2.gsafevpnapi.com
-  port: 31870
-  cipher: aes-256-gcm
-  password: e016d072-ed97-40d4-a83f-04c00f8df2a5
-  udp: true
-- name: 🇯🇵 日本 (Japan) 28 - yoki
+- name: 🇯🇵 日本 (Japan) 29 - yoki
   type: vless
   server: 202.144.192.76
   port: 13779
@@ -331,6 +343,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 26 - yoki
   - 🇯🇵 日本 (Japan) 27 - yoki
   - 🇯🇵 日本 (Japan) 28 - yoki
+  - 🇯🇵 日本 (Japan) 29 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -364,5 +377,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 26 - yoki
   - 🇯🇵 日本 (Japan) 27 - yoki
   - 🇯🇵 日本 (Japan) 28 - yoki
+  - 🇯🇵 日本 (Japan) 29 - yoki
 rules:
 - MATCH,PROXIES
