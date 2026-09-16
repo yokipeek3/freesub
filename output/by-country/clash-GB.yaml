@@ -6,57 +6,21 @@ log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - yoki
   type: ss
-  server: 149.102.149.207
+  server: 149.102.132.184
   port: 443
   cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
+  password: g5h5jleTRSyO3Rk4
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 02 - yoki
   type: ss
   server: 149.102.149.207
-  port: 80
+  port: 443
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
   udp: true
 - name: 🇬🇧 英国 (United Kingdom) 03 - yoki
   type: vless
-  server: 172.67.203.158
-  port: 443
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-  network: ws
-  ws-opts:
-    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 04 - yoki
-  type: ss
-  server: 94.156.250.148
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 05 - yoki
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 06 - yoki
-  type: vless
-  server: 91.193.58.195
+  server: 91.193.58.141
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
@@ -65,9 +29,39 @@ proxies:
   servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /Telegram-WangCai2🇨🇳
+    path: Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 04 - yoki
+  type: vless
+  server: 129.121.95.159
+  port: 443
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 129.121.95.159
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: 129.121.95.159
+- name: 🇬🇧 英国 (United Kingdom) 05 - yoki
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 06 - yoki
+  type: ss
+  server: 149.102.149.207
+  port: 80
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+  udp: true
 - name: 🇬🇧 英国 (United Kingdom) 07 - yoki
   type: vmess
   server: 66.163.117.58
@@ -89,45 +83,100 @@ proxies:
   reality-opts:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 09 - yoki
-  type: vless
-  server: 172.67.157.183
-  port: 443
-  uuid: 401d950d-4f5c-45c7-bf44-8b69acf35f6f
+  type: ss
+  server: 82.38.31.187
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 7x70yyvT7eQOtx-IQ9N3RJT1xn1jwkh9.asDFsAFdsAF.WORkerS.Dev
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiR2xWQ1FCQzYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: 7x70yyvt7eqotx-iq9n3rjt1xn1jwkh9.asdfsafdsaf.workers.dev
 - name: 🇬🇧 英国 (United Kingdom) 10 - yoki
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 11 - yoki
+  type: ss
+  server: 149.102.132.184
+  port: 80
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 12 - yoki
   type: ss
   server: 51.38.71.51
   port: 2083
   cipher: 2022-blake3-aes-256-gcm
   password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 11 - yoki
+- name: 🇬🇧 英国 (United Kingdom) 13 - yoki
+  type: ss
+  server: 94.156.250.148
+  port: 7001
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 14 - yoki
+  type: ss
+  server: 158.173.221.214
+  port: 11001
+  cipher: chacha20-ietf-poly1305
+  password: c58d16e593d44f42
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - yoki
+  type: ss
+  server: 82.38.31.200
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 16 - yoki
+  type: ss
+  server: 158.173.24.73
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 17 - yoki
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 18 - yoki
   type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  server: 57.128.177.198
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+  servername: vp58.cc.cd
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /TelegramðŸ‡¨ðŸ‡³+fp=chrome
     headers:
-      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 12 - yoki
+      Host: vp58.cc.cd
+- name: 🇬🇧 英国 (United Kingdom) 19 - yoki
+  type: ss
+  server: 129.151.95.162
+  port: 61312
+  cipher: 2022-blake3-chacha20-poly1305
+  password: L7JatIxNiZclnhe7tnBN4aTKGBuQbZwnBF7cjyB1XhE=
+  udp: true
+- name: 🇬🇧 英国 (United Kingdom) 20 - yoki
   type: vless
-  server: 91.193.58.141
+  server: 91.193.58.195
   port: 443
   uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
@@ -136,17 +185,32 @@ proxies:
   servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /Telegram-WangCai2🇨🇳
+    path: Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 13 - yoki
+- name: 🇬🇧 英国 (United Kingdom) 21 - yoki
   type: ss
-  server: 149.102.132.184
-  port: 80
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-- name: 🇬🇧 英国 (United Kingdom) 14 - yoki
+- name: 🇬🇧 英国 (United Kingdom) 22 - yoki
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 23 - yoki
   type: vless
   server: 91.193.58.117
   port: 443
@@ -157,121 +221,19 @@ proxies:
   servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /Telegram-WangCai2🇨🇳
+    path: Telegram-WangCai2🇨🇳
     headers:
       Host: jamph131-1228.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 15 - yoki
-  type: vless
-  server: 139.59.189.127
-  port: 443
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shy-fog-af06.alvlirm333.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shy-fog-af06.alvlirm333.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 16 - yoki
-  type: vless
-  server: 172.66.47.132
-  port: 443
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  network: ws
-  ws-opts:
-    path: /pRXE5ot0RZaQSr7B
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇬🇧 英国 (United Kingdom) 17 - yoki
-  type: vless
-  server: 57.129.130.57
-  port: 52014
-  uuid: 47ba5dc6-8961-48a0-8b54-f57ec524627a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 18 - yoki
-  type: ss
-  server: 149.102.132.184
-  port: 443
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 19 - yoki
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 20 - yoki
-  type: ss
-  server: 158.173.221.214
-  port: 11001
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 21 - yoki
-  type: vless
-  server: 162.159.153.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 🇬🇧 英国 (United Kingdom) 22 - yoki
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 23 - yoki
-  type: vless
-  server: 129.121.95.159
-  port: 443
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 129.121.95.159
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: 129.121.95.159
 - name: 🇬🇧 英国 (United Kingdom) 24 - yoki
-  type: vless
-  server: 91.193.58.93
-  port: 443
-  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: jamph131-1228.pages.dev
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: jamph131-1228.pages.dev
 - name: 🇬🇧 英国 (United Kingdom) 25 - yoki
   type: vless
   server: 78.129.208.44
@@ -283,46 +245,22 @@ proxies:
   reality-opts:
     public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
   servername: chistomat.dry.care
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 26 - yoki
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 27 - yoki
   type: vless
-  server: 172.67.215.39
+  server: 91.193.58.93
   port: 443
-  uuid: 532a9115-aee7-4d39-9638-1e5146de075b
+  uuid: 9419f782-b18e-4c4b-ae95-a7a279fd021f
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: muddy-math-c1fc.tmpnriqueau89.workers.dev
+  servername: jamph131-1228.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: Telegram-WangCai2🇨🇳
     headers:
-      Host: muddy-math-c1fc.tmpnriqueau89.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 28 - yoki
-  type: ss
-  server: 129.151.95.162
-  port: 61312
-  cipher: 2022-blake3-chacha20-poly1305
-  password: L7JatIxNiZclnhe7tnBN4aTKGBuQbZwnBF7cjyB1XhE=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 29 - yoki
-  type: ss
-  server: 51.38.71.51
-  port: 2083
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
-  udp: true
-- name: 🇬🇧 英国 (United Kingdom) 30 - yoki
+      Host: jamph131-1228.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 27 - yoki
   type: vless
   server: 186.190.211.188
   port: 443
@@ -331,23 +269,33 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: 186.190.211.188
-- name: 🇬🇧 英国 (United Kingdom) 31 - yoki
+- name: 🇬🇧 英国 (United Kingdom) 28 - yoki
   type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
   alterId: 0
   cipher: auto
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 32 - yoki
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 29 - yoki
+  type: vless
+  server: 46.250.250.149
+  port: 2053
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -382,9 +330,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 27 - yoki
   - 🇬🇧 英国 (United Kingdom) 28 - yoki
   - 🇬🇧 英国 (United Kingdom) 29 - yoki
-  - 🇬🇧 英国 (United Kingdom) 30 - yoki
-  - 🇬🇧 英国 (United Kingdom) 31 - yoki
-  - 🇬🇧 英国 (United Kingdom) 32 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -419,8 +364,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 27 - yoki
   - 🇬🇧 英国 (United Kingdom) 28 - yoki
   - 🇬🇧 英国 (United Kingdom) 29 - yoki
-  - 🇬🇧 英国 (United Kingdom) 30 - yoki
-  - 🇬🇧 英国 (United Kingdom) 31 - yoki
-  - 🇬🇧 英国 (United Kingdom) 32 - yoki
 rules:
 - MATCH,PROXIES
