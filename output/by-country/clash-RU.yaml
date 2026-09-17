@@ -5,81 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  type: ss
-  server: 195.58.48.137
-  port: 9019
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  type: ss
-  server: 195.133.5.102
-  port: 9011
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - yoki
   type: vless
-  server: 194.53.53.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 05 - yoki
-  type: vless
-  server: 172.67.147.209
+  server: 46.8.200.91
   port: 443
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
+  servername: cf3.rumedia-cdn.com
   network: ws
   ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
+    path: /cdn/v3/live
     headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 06 - yoki
-  type: ss
-  server: 194.87.196.13
-  port: 9011
-  cipher: aes-256-gcm
-  password: 4938e975724d0ed1
-  udp: true
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 04 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 05 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 06 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 04 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 05 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 06 - yoki
 rules:
 - MATCH,PROXIES

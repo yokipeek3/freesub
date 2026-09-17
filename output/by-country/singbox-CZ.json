@@ -6,14 +6,32 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - yoki"
+        "🇨🇿 CZ 01 - yoki",
+        "🇨🇿 CZ 02 - yoki",
+        "🇨🇿 CZ 03 - yoki",
+        "🇨🇿 CZ 04 - yoki",
+        "🇨🇿 CZ 05 - yoki",
+        "🇨🇿 CZ 06 - yoki",
+        "🇨🇿 CZ 07 - yoki",
+        "🇨🇿 CZ 08 - yoki",
+        "🇨🇿 CZ 09 - yoki",
+        "🇨🇿 CZ 10 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - yoki"
+        "🇨🇿 CZ 01 - yoki",
+        "🇨🇿 CZ 02 - yoki",
+        "🇨🇿 CZ 03 - yoki",
+        "🇨🇿 CZ 04 - yoki",
+        "🇨🇿 CZ 05 - yoki",
+        "🇨🇿 CZ 06 - yoki",
+        "🇨🇿 CZ 07 - yoki",
+        "🇨🇿 CZ 08 - yoki",
+        "🇨🇿 CZ 09 - yoki",
+        "🇨🇿 CZ 10 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },
