@@ -6,14 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - yoki"
+        "🇸🇨 SC 01 - yoki",
+        "🇸🇨 SC 02 - yoki",
+        "🇸🇨 SC 03 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - yoki"
+        "🇸🇨 SC 01 - yoki",
+        "🇸🇨 SC 02 - yoki",
+        "🇸🇨 SC 03 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },
