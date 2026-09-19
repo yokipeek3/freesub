@@ -4,7 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - yoki
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - yoki
+  type: ss
+  server: 36.224.185.173
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - yoki
+  type: vless
+  server: 172.64.53.60
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - yoki
   type: vless
   server: 104.18.42.54
   port: 2087
@@ -18,34 +39,37 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇺🇸 美国 (United States) 02 (家宽) - yoki
-  type: vless
-  server: 162.159.45.19
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - yoki
+  type: vmess
+  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  port: 443
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: ''
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: ''
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - yoki
-  type: ss
-  server: 36.224.185.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+      Host: ''
+- name: 🇺🇸 美国 (United States) 05 (家宽) - yoki
+  type: vless
+  server: 104.21.12.21
+  port: 443
+  uuid: 73796e63-0000-4000-8000-000000000000
   udp: true
-- name: 🇺🇸 美国 (United States) 04 (家宽) - yoki
-  type: ss
-  server: 23.252.104.131
-  port: 54321
-  cipher: aes-256-gcm
-  password: Proxy2024
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - yoki
+  tls: true
+  skip-cert-verify: true
+  servername: nahan-core.fatitelegram.workers.dev
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.fatitelegram.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - yoki
   type: vless
   server: 172.64.53.87
   port: 2087
@@ -59,27 +83,25 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - yoki
-  type: vmess
-  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - yoki
+  type: vless
+  server: 104.19.215.97
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: ?ed=2560
     headers:
-      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - yoki
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - yoki
   type: vless
-  server: 60.248.219.78
+  server: 59.125.69.19
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: f1d247db-d7ce-4eb8-9c0d-7b10603cd0b4
   udp: true
   tls: true
   skip-cert-verify: true
@@ -88,39 +110,32 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.78
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - yoki
-  type: ss
-  server: 36.224.185.143
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
+      Host: 59.125.69.19
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - yoki
-  - 🇺🇸 美国 (United States) 02 (家宽) - yoki
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - yoki
-  - 🇺🇸 美国 (United States) 04 (家宽) - yoki
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - yoki
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - yoki
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - yoki
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - yoki
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - yoki
+  - 🇺🇸 美国 (United States) 05 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - yoki
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - yoki
-  - 🇺🇸 美国 (United States) 02 (家宽) - yoki
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - yoki
-  - 🇺🇸 美国 (United States) 04 (家宽) - yoki
-  - 🇰🇷 韩国 (South Korea) 05 (家宽) - yoki
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - yoki
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - yoki
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - yoki
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - yoki
+  - 🇺🇸 美国 (United States) 05 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - yoki
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - yoki
   - 🇹🇼 中国台湾 (Taiwan) 08 (家宽) - yoki
 rules:
 - MATCH,PROXIES

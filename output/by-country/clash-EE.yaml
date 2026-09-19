@@ -15,14 +15,6 @@ proxies:
   servername: estproxy4.lockdwn.com
 - name: 🇪🇪 EE 02 - yoki
   type: vless
-  server: 212.87.190.124
-  port: 3
-  uuid: 6049e972-419e-43bc-932c-4032be6d1b5b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇪 EE 03 - yoki
-  type: vless
   server: 94.183.170.135
   port: 8443
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
@@ -30,6 +22,48 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: estproxy4.lockdwn.com
+- name: 🇪🇪 EE 03 - yoki
+  type: vless
+  server: 104.24.30.89
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇪🇪 EE 04 - yoki
+  type: vless
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇪🇪 EE 05 - yoki
+  type: vless
+  server: 172.67.67.178
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +72,8 @@ proxy-groups:
   - 🇪🇪 EE 01 - yoki
   - 🇪🇪 EE 02 - yoki
   - 🇪🇪 EE 03 - yoki
+  - 🇪🇪 EE 04 - yoki
+  - 🇪🇪 EE 05 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +82,7 @@ proxy-groups:
   - 🇪🇪 EE 01 - yoki
   - 🇪🇪 EE 02 - yoki
   - 🇪🇪 EE 03 - yoki
+  - 🇪🇪 EE 04 - yoki
+  - 🇪🇪 EE 05 - yoki
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,66 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yoki
   type: vless
+  server: 162.159.45.19
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
+  type: vless
+  server: 45.130.125.207
+  port: 8443
+  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - yoki
+  type: vless
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - yoki
+  type: ss
+  server: 134.0.112.71
+  port: 17517
+  cipher: aes-256-gcm
+  password: 64Kms+G+nD6FlGJjZJfeUNJIGbX/EKrk2o/MH04zApw=
+  udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - yoki
+  type: vless
+  server: 108.162.198.178
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 06 - yoki
+  type: vless
   server: 46.8.200.91
   port: 443
   uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
@@ -18,26 +78,13 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
+- name: 🇷🇺 俄罗斯 (Russia) 07 - yoki
   type: ss
-  server: 195.58.48.137
+  server: 195.133.5.102
   port: 10900
   cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
+  password: 895b4b796a357570
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  type: vless
-  server: 172.64.53.55
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +93,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
   - 🇷🇺 俄罗斯 (Russia) 02 - yoki
   - 🇷🇺 俄罗斯 (Russia) 03 - yoki
+  - 🇷🇺 俄罗斯 (Russia) 04 - yoki
+  - 🇷🇺 俄罗斯 (Russia) 05 - yoki
+  - 🇷🇺 俄罗斯 (Russia) 06 - yoki
+  - 🇷🇺 俄罗斯 (Russia) 07 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +105,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
   - 🇷🇺 俄罗斯 (Russia) 02 - yoki
   - 🇷🇺 俄罗斯 (Russia) 03 - yoki
+  - 🇷🇺 俄罗斯 (Russia) 04 - yoki
+  - 🇷🇺 俄罗斯 (Russia) 05 - yoki
+  - 🇷🇺 俄罗斯 (Russia) 06 - yoki
+  - 🇷🇺 俄罗斯 (Russia) 07 - yoki
 rules:
 - MATCH,PROXIES

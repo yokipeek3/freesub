@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇧🇪 BE 01 - yoki",
+        "🇧🇪 BE 02 - yoki",
+        "🇧🇪 BE 03 - yoki",
+        "🇧🇪 BE 04 - yoki",
+        "🇧🇪 BE 05 - yoki",
+        "🇧🇪 BE 06 - yoki",
+        "🇧🇪 BE 07 - yoki",
+        "🇧🇪 BE 08 - yoki"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇧🇪 BE 01 - yoki",
+        "🇧🇪 BE 02 - yoki",
+        "🇧🇪 BE 03 - yoki",
+        "🇧🇪 BE 04 - yoki",
+        "🇧🇪 BE 05 - yoki",
+        "🇧🇪 BE 06 - yoki",
+        "🇧🇪 BE 07 - yoki",
+        "🇧🇪 BE 08 - yoki"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
