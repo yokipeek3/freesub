@@ -20,35 +20,35 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - yoki
   type: vless
-  server: 162.159.153.4
+  server: 195.85.23.75
   port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 03 - yoki
   type: vless
-  server: 104.21.64.250
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  server: 195.85.23.252
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
+  servername: nb.lovecf.ggff.net
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=us.xiabibi.cf
     headers:
-      Host: index.arcane509.workers.dev
+      Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 04 - yoki
   type: vless
-  server: 195.85.23.88
+  server: 195.85.23.111
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
