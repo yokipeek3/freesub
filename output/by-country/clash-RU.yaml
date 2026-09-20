@@ -6,38 +6,29 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yoki
   type: vless
-  server: 188.130.207.30
-  port: 2053
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 45.130.125.126
+  port: 443
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cdn8848.776676.xyz
+  servername: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
   network: ws
   ws-opts:
-    path: /
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
-  udp: true
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 02 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 02 - yoki
 rules:
 - MATCH,PROXIES
