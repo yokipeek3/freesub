@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (家宽) - yoki
+- name: 🇧🇷 BR 01 - yoki
   type: vless
-  server: 64.225.65.116
-  port: 8443
+  server: 5.104.107.80
+  port: 2053
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   udp: true
   tls: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (家宽) - yoki
+  - 🇧🇷 BR 01 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (家宽) - yoki
+  - 🇧🇷 BR 01 - yoki
 rules:
 - MATCH,PROXIES
