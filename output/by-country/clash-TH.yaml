@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: safari
 - name: 🇹🇭 TH 03 - yoki
   type: vless
   server: 34.15.162.1
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: ios
 - name: 🇹🇭 TH 04 - yoki
   type: vless
   server: 34.15.162.1
@@ -63,7 +63,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: random
 - name: 🇹🇭 TH 06 - yoki
   type: vless
   server: 34.15.162.1
@@ -75,7 +75,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 07 - yoki
   type: vless
   server: 43.133.110.81
@@ -101,7 +101,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇹🇭 TH 09 - yoki
   type: vmess
   server: 118.193.57.167
