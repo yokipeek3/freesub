@@ -19,46 +19,6 @@ proxies:
     headers:
       Host: shuma.ccwu.cc
 - name: 🇪🇸 西班牙 (Spain) 02 - yoki
-  type: ss
-  server: 108.181.121.226
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - yoki
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 04 - yoki
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 05 - yoki
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mygptagent.org
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 06 - yoki
   type: vless
   server: 152.114.195.163
   port: 8443
@@ -72,7 +32,23 @@ proxies:
     path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇪🇸 西班牙 (Spain) 07 - yoki
+- name: 🇪🇸 西班牙 (Spain) 03 - yoki
+  type: vmess
+  server: mygptagent.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: ''
+- name: 🇪🇸 西班牙 (Spain) 04 - yoki
   type: vless
   server: 152.114.195.163
   port: 8443
@@ -95,9 +71,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - yoki
   - 🇪🇸 西班牙 (Spain) 03 - yoki
   - 🇪🇸 西班牙 (Spain) 04 - yoki
-  - 🇪🇸 西班牙 (Spain) 05 - yoki
-  - 🇪🇸 西班牙 (Spain) 06 - yoki
-  - 🇪🇸 西班牙 (Spain) 07 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -107,8 +80,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - yoki
   - 🇪🇸 西班牙 (Spain) 03 - yoki
   - 🇪🇸 西班牙 (Spain) 04 - yoki
-  - 🇪🇸 西班牙 (Spain) 05 - yoki
-  - 🇪🇸 西班牙 (Spain) 06 - yoki
-  - 🇪🇸 西班牙 (Spain) 07 - yoki
 rules:
 - MATCH,PROXIES
