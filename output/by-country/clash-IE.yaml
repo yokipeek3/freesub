@@ -4,10 +4,10 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 AM 01 - yoki
+- name: 🇮🇪 IE 01 - yoki
   type: vless
-  server: 2.56.204.183
-  port: 443
+  server: 198.55.102.68
+  port: 2083
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -15,13 +15,13 @@ proxies:
   servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /
     headers:
       Host: shuma.ccwu.cc
-- name: 🇦🇲 AM 02 - yoki
+- name: 🇮🇪 IE 02 - yoki
   type: vless
-  server: 2.56.204.183
-  port: 443
+  server: 107.150.20.112
+  port: 8443
   uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
   tls: true
@@ -37,14 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 AM 01 - yoki
-  - 🇦🇲 AM 02 - yoki
+  - 🇮🇪 IE 01 - yoki
+  - 🇮🇪 IE 02 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 AM 01 - yoki
-  - 🇦🇲 AM 02 - yoki
+  - 🇮🇪 IE 01 - yoki
+  - 🇮🇪 IE 02 - yoki
 rules:
 - MATCH,PROXIES
