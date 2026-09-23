@@ -4,31 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - yoki
+- name: 🇺🇿 UZ 01 - yoki
   type: vless
-  server: 46.8.200.91
+  server: 104.25.155.45
   port: 443
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: 50414e45-4c5f-5a45-5553-4eef5adc237a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: cf3.rumedia-cdn.com
+  servername: r5zenrelur2s.pqzdileiu8es.workers.dev
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /stream/PANEL_ZEUS/4eef5adc237a/loc-1
     headers:
-      Host: cf3.rumedia-cdn.com
+      Host: r5zenrelur2s.pqzdileiu8es.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - yoki
+  - 🇺🇿 UZ 01 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - yoki
+  - 🇺🇿 UZ 01 - yoki
 rules:
 - MATCH,PROXIES
