@@ -18,65 +18,29 @@ proxies:
   client-fingerprint: firefox
 - name: 🇹🇭 TH 02 - yoki
   type: vless
-  server: 34.15.176.240
+  server: 34.15.162.1
   port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇭 TH 03 - yoki
   type: vless
-  server: 34.15.176.240
+  server: 34.15.162.1
   port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇹🇭 TH 04 - yoki
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 05 - yoki
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 06 - yoki
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇹🇭 TH 07 - yoki
   type: vless
   server: 43.133.110.81
   port: 443
@@ -90,31 +54,19 @@ proxies:
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇹🇭 TH 08 - yoki
+- name: 🇹🇭 TH 05 - yoki
   type: vless
-  server: 34.15.162.1
+  server: 34.15.176.240
   port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
   udp: true
   tls: true
   skip-cert-verify: true
   reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇹🇭 TH 09 - yoki
-  type: vless
-  server: 34.15.162.1
-  port: 443
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇹🇭 TH 10 - yoki
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 06 - yoki
   type: vless
   server: 34.15.162.1
   port: 443
@@ -126,7 +78,19 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 TH 11 - yoki
+- name: 🇹🇭 TH 07 - yoki
+  type: vless
+  server: 34.15.176.240
+  port: 443
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 08 - yoki
   type: vless
   server: 34.15.162.1
   port: 443
@@ -137,22 +101,20 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇭 TH 12 - yoki
+  client-fingerprint: edge
+- name: 🇹🇭 TH 09 - yoki
   type: vless
-  server: 103.224.84.70
+  server: 34.15.162.1
   port: 443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇹🇭 TH 13 - yoki
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇹🇭 TH 10 - yoki
   type: vless
   server: 34.15.162.1
   port: 443
@@ -164,7 +126,19 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇹🇭 TH 14 - yoki
+- name: 🇹🇭 TH 11 - yoki
+  type: vless
+  server: 34.15.176.240
+  port: 443
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 TH 12 - yoki
   type: vless
   server: 103.86.49.57
   port: 80
@@ -194,8 +168,6 @@ proxy-groups:
   - 🇹🇭 TH 10 - yoki
   - 🇹🇭 TH 11 - yoki
   - 🇹🇭 TH 12 - yoki
-  - 🇹🇭 TH 13 - yoki
-  - 🇹🇭 TH 14 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -213,7 +185,5 @@ proxy-groups:
   - 🇹🇭 TH 10 - yoki
   - 🇹🇭 TH 11 - yoki
   - 🇹🇭 TH 12 - yoki
-  - 🇹🇭 TH 13 - yoki
-  - 🇹🇭 TH 14 - yoki
 rules:
 - MATCH,PROXIES

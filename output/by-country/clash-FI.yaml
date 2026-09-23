@@ -6,284 +6,77 @@ log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - yoki
   type: vless
-  server: 212.104.128.27
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 146.75.119.82
+  port: 80
+  uuid: c36d624e-a851-486f-bd87-844b1e4d609d
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: rb24.ir
 - name: 🇫🇮 FI 02 - yoki
   type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?
-    headers:
-      Host: c12.com
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 03 - yoki
   type: vless
-  server: 212.104.128.206
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 04 - yoki
   type: vless
-  server: 212.104.128.0
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 - name: 🇫🇮 FI 05 - yoki
   type: vless
-  server: 212.104.128.68
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: firefox
 - name: 🇫🇮 FI 06 - yoki
   type: vless
-  server: 212.104.128.139
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  server: 185.79.138.71
+  port: 448
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 07 - yoki
-  type: vless
-  server: 212.104.128.152
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 08 - yoki
-  type: vless
-  server: 31.76.80.230
-  port: 8443
-  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fin.luxes.network
-  network: ws
-  ws-opts:
-    path: /assets
-    headers:
-      Host: 31.76.80.230
-- name: 🇫🇮 FI 09 - yoki
-  type: vless
-  server: 31.76.80.230
-  port: 8443
-  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fin.luxes.network
-  network: ws
-  ws-opts:
-    path: /assets
-    headers:
-      Host: 31.76.80.230
-- name: 🇫🇮 FI 10 - yoki
-  type: vless
-  server: k2.cloud--vpn.site
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 11 - yoki
-  type: vless
-  server: 212.104.128.244
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 12 - yoki
-  type: vless
-  server: 212.104.128.45
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 13 - yoki
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /?
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 14 - yoki
-  type: vless
-  server: 212.104.128.217
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 15 - yoki
-  type: vless
-  server: 103.71.22.133
-  port: 8443
-  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: shuma.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shuma.ccwu.cc
-- name: 🇫🇮 FI 16 - yoki
-  type: vless
-  server: 212.104.128.106
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 17 - yoki
-  type: vless
-  server: 151.101.56.7
-  port: 443
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kayko.global.ssl.fastly.net
-- name: 🇫🇮 FI 18 - yoki
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: 1fac5e18-2ca8-4626-c299-1f3f21c6b55e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 FI 19 - yoki
-  type: vless
-  server: 212.104.128.217
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
-- name: 🇫🇮 FI 20 - yoki
-  type: vless
-  server: 212.104.128.68
-  port: 443
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: xi.tbv.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+  servername: www.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -295,20 +88,6 @@ proxy-groups:
   - 🇫🇮 FI 04 - yoki
   - 🇫🇮 FI 05 - yoki
   - 🇫🇮 FI 06 - yoki
-  - 🇫🇮 FI 07 - yoki
-  - 🇫🇮 FI 08 - yoki
-  - 🇫🇮 FI 09 - yoki
-  - 🇫🇮 FI 10 - yoki
-  - 🇫🇮 FI 11 - yoki
-  - 🇫🇮 FI 12 - yoki
-  - 🇫🇮 FI 13 - yoki
-  - 🇫🇮 FI 14 - yoki
-  - 🇫🇮 FI 15 - yoki
-  - 🇫🇮 FI 16 - yoki
-  - 🇫🇮 FI 17 - yoki
-  - 🇫🇮 FI 18 - yoki
-  - 🇫🇮 FI 19 - yoki
-  - 🇫🇮 FI 20 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -320,19 +99,5 @@ proxy-groups:
   - 🇫🇮 FI 04 - yoki
   - 🇫🇮 FI 05 - yoki
   - 🇫🇮 FI 06 - yoki
-  - 🇫🇮 FI 07 - yoki
-  - 🇫🇮 FI 08 - yoki
-  - 🇫🇮 FI 09 - yoki
-  - 🇫🇮 FI 10 - yoki
-  - 🇫🇮 FI 11 - yoki
-  - 🇫🇮 FI 12 - yoki
-  - 🇫🇮 FI 13 - yoki
-  - 🇫🇮 FI 14 - yoki
-  - 🇫🇮 FI 15 - yoki
-  - 🇫🇮 FI 16 - yoki
-  - 🇫🇮 FI 17 - yoki
-  - 🇫🇮 FI 18 - yoki
-  - 🇫🇮 FI 19 - yoki
-  - 🇫🇮 FI 20 - yoki
 rules:
 - MATCH,PROXIES
