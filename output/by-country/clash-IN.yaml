@@ -40,6 +40,26 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 - yoki
+  type: vless
+  server: 194.61.31.126
+  port: 2053
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 05 - yoki
+  type: vless
+  server: 31.56.222.61
+  port: 13077
+  uuid: 79251d3c-aabc-475c-b598-67263479b382
+  udp: true
+  tls: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +68,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - yoki
   - 🇮🇳 印度 (India) 02 - yoki
   - 🇮🇳 印度 (India) 03 - yoki
+  - 🇮🇳 印度 (India) 04 - yoki
+  - 🇮🇳 印度 (India) 05 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -56,5 +78,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - yoki
   - 🇮🇳 印度 (India) 02 - yoki
   - 🇮🇳 印度 (India) 03 - yoki
+  - 🇮🇳 印度 (India) 04 - yoki
+  - 🇮🇳 印度 (India) 05 - yoki
 rules:
 - MATCH,PROXIES
