@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 IL 01 - yoki
+- name: 🇲🇩 MD 01 - yoki
   type: vless
-  server: platform115.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  server: 143.246.219.51
+  port: 8081
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /platform115
+    path: /vless-test
     headers:
-      Host: platform115.golnamakcert.top
+      Host: 143.246.219.51
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 IL 01 - yoki
+  - 🇲🇩 MD 01 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 IL 01 - yoki
+  - 🇲🇩 MD 01 - yoki
 rules:
 - MATCH,PROXIES
