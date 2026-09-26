@@ -7,7 +7,9 @@
       "outbounds": [
         "auto",
         "🇨🇱 CL 01 - yoki",
-        "🇨🇱 CL 02 - yoki"
+        "🇨🇱 CL 02 - yoki",
+        "🇨🇱 CL 03 - yoki",
+        "🇨🇱 CL 04 - yoki"
       ]
     },
     {
@@ -15,7 +17,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇱 CL 01 - yoki",
-        "🇨🇱 CL 02 - yoki"
+        "🇨🇱 CL 02 - yoki",
+        "🇨🇱 CL 03 - yoki",
+        "🇨🇱 CL 04 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },
