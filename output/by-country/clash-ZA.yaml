@@ -19,115 +19,17 @@ proxies:
       Host: platform101.halalkhor.info
 - name: 🇿🇦 ZA 02 - yoki
   type: ss
-  server: 20.164.220.82
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: Qy7KyMo4epSCiluJ
-  udp: true
-- name: 🇿🇦 ZA 03 - yoki
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇿🇦 ZA 04 - yoki
-  type: vless
-  server: platform106.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.golnamakcert.top
-- name: 🇿🇦 ZA 05 - yoki
-  type: vless
-  server: platform108.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform108
-    headers:
-      Host: platform108.halalkhor.info
-- name: 🇿🇦 ZA 06 - yoki
-  type: vless
-  server: platform103.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇿🇦 ZA 07 - yoki
-  type: vless
-  server: platform109.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform109
-    headers:
-      Host: platform109.golnamakcert.top
-- name: 🇿🇦 ZA 08 - yoki
-  type: vless
-  server: platform107.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇿🇦 ZA 09 - yoki
-  type: vless
-  server: platform107.golnamakcert.top
-  port: 80
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.golnamakcert.top
-- name: 🇿🇦 ZA 10 - yoki
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: 🇿🇦 ZA 11 - yoki
-  type: ss
   server: 139.84.247.164
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
+  udp: true
+- name: 🇿🇦 ZA 03 - yoki
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -137,14 +39,6 @@ proxy-groups:
   - 🇿🇦 ZA 01 - yoki
   - 🇿🇦 ZA 02 - yoki
   - 🇿🇦 ZA 03 - yoki
-  - 🇿🇦 ZA 04 - yoki
-  - 🇿🇦 ZA 05 - yoki
-  - 🇿🇦 ZA 06 - yoki
-  - 🇿🇦 ZA 07 - yoki
-  - 🇿🇦 ZA 08 - yoki
-  - 🇿🇦 ZA 09 - yoki
-  - 🇿🇦 ZA 10 - yoki
-  - 🇿🇦 ZA 11 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -153,13 +47,5 @@ proxy-groups:
   - 🇿🇦 ZA 01 - yoki
   - 🇿🇦 ZA 02 - yoki
   - 🇿🇦 ZA 03 - yoki
-  - 🇿🇦 ZA 04 - yoki
-  - 🇿🇦 ZA 05 - yoki
-  - 🇿🇦 ZA 06 - yoki
-  - 🇿🇦 ZA 07 - yoki
-  - 🇿🇦 ZA 08 - yoki
-  - 🇿🇦 ZA 09 - yoki
-  - 🇿🇦 ZA 10 - yoki
-  - 🇿🇦 ZA 11 - yoki
 rules:
 - MATCH,PROXIES
