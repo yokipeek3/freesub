@@ -18,43 +18,17 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  type: vless
-  server: 95.163.232.171
-  port: 14443
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: media-se.compressor.work
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: 95.163.232.171
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  type: vless
-  server: 31.130.149.165
-  port: 875
-  uuid: 4a9d6057-985a-4531-851c-5b4db77b0409
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 03 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 03 - yoki
 rules:
 - MATCH,PROXIES
