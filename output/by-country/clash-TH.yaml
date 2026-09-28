@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 BE 01 - yoki
+- name: 🇹🇭 TH 01 - yoki
   type: vless
-  server: 34.79.178.1
-  port: 443
-  uuid: 51e493d4-b275-45e0-a714-e014f40b3c32
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 BE 01 - yoki
+  - 🇹🇭 TH 01 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 BE 01 - yoki
+  - 🇹🇭 TH 01 - yoki
 rules:
 - MATCH,PROXIES
