@@ -6,14 +6,42 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 MY 01 - yoki"
+        "🇲🇾 MY 01 - yoki",
+        "🇲🇾 MY 02 - yoki",
+        "🇲🇾 MY 03 - yoki",
+        "🇲🇾 MY 04 - yoki",
+        "🇲🇾 MY 05 - yoki",
+        "🇲🇾 MY 06 - yoki",
+        "🇲🇾 MY 07 - yoki",
+        "🇲🇾 MY 08 - yoki",
+        "🇲🇾 MY 09 - yoki",
+        "🇲🇾 MY 10 - yoki",
+        "🇲🇾 MY 11 - yoki",
+        "🇲🇾 MY 12 - yoki",
+        "🇲🇾 MY 13 - yoki",
+        "🇲🇾 MY 14 - yoki",
+        "🇲🇾 MY 15 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 MY 01 - yoki"
+        "🇲🇾 MY 01 - yoki",
+        "🇲🇾 MY 02 - yoki",
+        "🇲🇾 MY 03 - yoki",
+        "🇲🇾 MY 04 - yoki",
+        "🇲🇾 MY 05 - yoki",
+        "🇲🇾 MY 06 - yoki",
+        "🇲🇾 MY 07 - yoki",
+        "🇲🇾 MY 08 - yoki",
+        "🇲🇾 MY 09 - yoki",
+        "🇲🇾 MY 10 - yoki",
+        "🇲🇾 MY 11 - yoki",
+        "🇲🇾 MY 12 - yoki",
+        "🇲🇾 MY 13 - yoki",
+        "🇲🇾 MY 14 - yoki",
+        "🇲🇾 MY 15 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },
