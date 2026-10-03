@@ -6,20 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - yoki",
-        "🇱🇰 LK 02 - yoki",
-        "🇱🇰 LK 03 - yoki",
-        "🇱🇰 LK 04 - yoki"
+        "🇬🇪 GE 01 - yoki",
+        "🇬🇪 GE 02 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - yoki",
-        "🇱🇰 LK 02 - yoki",
-        "🇱🇰 LK 03 - yoki",
-        "🇱🇰 LK 04 - yoki"
+        "🇬🇪 GE 01 - yoki",
+        "🇬🇪 GE 02 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },
