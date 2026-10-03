@@ -5,22 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  type: vless
-  server: 46.243.232.125
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU=
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
   type: vless
-  server: fbsv6.guardora.pro
+  server: 81.94.148.214
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true
@@ -33,33 +26,12 @@ proxies:
     headers:
       Host: fbsv6.guardora.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  type: vless
-  server: 78.159.246.110
-  port: 443
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  type: ss
+  server: 90.156.203.62
+  port: 5112
+  cipher: chacha20-ietf-poly1305
+  password: VVlAff77CnAU43Aoc5j15Y
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fbsv6.guardora.pro
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 04 - yoki
-  type: vless
-  server: 104.21.51.145
-  port: 8443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,7 +40,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
   - 🇷🇺 俄罗斯 (Russia) 02 - yoki
   - 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -77,6 +48,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
   - 🇷🇺 俄罗斯 (Russia) 02 - yoki
   - 🇷🇺 俄罗斯 (Russia) 03 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 04 - yoki
 rules:
 - MATCH,PROXIES
