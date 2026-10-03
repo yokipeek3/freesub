@@ -6,10 +6,10 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - yoki
   type: ss
-  server: 108.181.121.226
+  server: 140.174.184.5
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  password: qItG8SueYQcP
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 02 - yoki
   type: ss
@@ -20,21 +20,11 @@ proxies:
   udp: true
 - name: 🇪🇸 西班牙 (Spain) 03 - yoki
   type: ss
-  server: 140.174.184.5
+  server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  password: WSyL4XTwNsdv
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 04 - yoki
-  type: vmess
-  server: 66.163.118.73
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +33,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - yoki
   - 🇪🇸 西班牙 (Spain) 02 - yoki
   - 🇪🇸 西班牙 (Spain) 03 - yoki
-  - 🇪🇸 西班牙 (Spain) 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,6 +41,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - yoki
   - 🇪🇸 西班牙 (Spain) 02 - yoki
   - 🇪🇸 西班牙 (Spain) 03 - yoki
-  - 🇪🇸 西班牙 (Spain) 04 - yoki
 rules:
 - MATCH,PROXIES
