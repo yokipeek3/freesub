@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇾 BY 01 - yoki
   type: vless
-  server: 89.125.96.89
+  server: 89.125.96.91
   port: 2053
   uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
   udp: true
@@ -20,7 +20,7 @@ proxies:
       Host: wss.zazazuza.ru
 - name: 🇧🇾 BY 02 - yoki
   type: vless
-  server: 89.125.96.81
+  server: 89.125.96.75
   port: 2053
   uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
   udp: true
@@ -34,105 +34,7 @@ proxies:
       Host: wss.zazazuza.ru
 - name: 🇧🇾 BY 03 - yoki
   type: vless
-  server: 89.125.96.79
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 04 - yoki
-  type: vless
-  server: 89.125.96.88
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 05 - yoki
-  type: vless
-  server: 89.125.96.80
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 06 - yoki
-  type: vless
-  server: 89.125.96.74
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 07 - yoki
-  type: vless
   server: 89.125.96.75
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 08 - yoki
-  type: vless
-  server: 89.125.96.90
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 09 - yoki
-  type: vless
-  server: 89.125.96.75
-  port: 2053
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wss.zazazuza.ru
-  network: ws
-  ws-opts:
-    path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
-- name: 🇧🇾 BY 10 - yoki
-  type: vless
-  server: 89.125.96.74
   port: 2053
   uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
   udp: true
@@ -152,13 +54,6 @@ proxy-groups:
   - 🇧🇾 BY 01 - yoki
   - 🇧🇾 BY 02 - yoki
   - 🇧🇾 BY 03 - yoki
-  - 🇧🇾 BY 04 - yoki
-  - 🇧🇾 BY 05 - yoki
-  - 🇧🇾 BY 06 - yoki
-  - 🇧🇾 BY 07 - yoki
-  - 🇧🇾 BY 08 - yoki
-  - 🇧🇾 BY 09 - yoki
-  - 🇧🇾 BY 10 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -167,12 +62,5 @@ proxy-groups:
   - 🇧🇾 BY 01 - yoki
   - 🇧🇾 BY 02 - yoki
   - 🇧🇾 BY 03 - yoki
-  - 🇧🇾 BY 04 - yoki
-  - 🇧🇾 BY 05 - yoki
-  - 🇧🇾 BY 06 - yoki
-  - 🇧🇾 BY 07 - yoki
-  - 🇧🇾 BY 08 - yoki
-  - 🇧🇾 BY 09 - yoki
-  - 🇧🇾 BY 10 - yoki
 rules:
 - MATCH,PROXIES
