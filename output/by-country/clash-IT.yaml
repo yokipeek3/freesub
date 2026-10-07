@@ -6,39 +6,13 @@ log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - yoki
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 02 - yoki
-  type: vless
-  server: 80.211.27.249
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
-- name: 🇮🇹 意大利 (Italy) 03 - yoki
-  type: vless
   server: 204.216.216.23
   port: 10086
   uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇮🇹 意大利 (Italy) 04 - yoki
+- name: 🇮🇹 意大利 (Italy) 02 - yoki
   type: vless
   server: 57.131.21.102
   port: 8443
@@ -52,25 +26,14 @@ proxies:
     path: /RoBeRt
     headers:
       Host: milan.adaspoloandco.com
-- name: 🇮🇹 意大利 (Italy) 05 - yoki
-  type: ss
-  server: 57.131.48.45
-  port: 8388
-  cipher: aes-256-gcm
-  password: itzvpn@321
-  udp: true
-- name: 🇮🇹 意大利 (Italy) 06 - yoki
+- name: 🇮🇹 意大利 (Italy) 03 - yoki
   type: vless
-  server: 57.131.38.163
-  port: 2053
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  server: 204.216.216.23
+  port: 10086
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,9 +42,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - yoki
   - 🇮🇹 意大利 (Italy) 02 - yoki
   - 🇮🇹 意大利 (Italy) 03 - yoki
-  - 🇮🇹 意大利 (Italy) 04 - yoki
-  - 🇮🇹 意大利 (Italy) 05 - yoki
-  - 🇮🇹 意大利 (Italy) 06 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -90,8 +50,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 01 - yoki
   - 🇮🇹 意大利 (Italy) 02 - yoki
   - 🇮🇹 意大利 (Italy) 03 - yoki
-  - 🇮🇹 意大利 (Italy) 04 - yoki
-  - 🇮🇹 意大利 (Italy) 05 - yoki
-  - 🇮🇹 意大利 (Italy) 06 - yoki
 rules:
 - MATCH,PROXIES
