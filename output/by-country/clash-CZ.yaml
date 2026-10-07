@@ -6,34 +6,20 @@ log-level: info
 proxies:
 - name: 🇨🇿 CZ 01 - yoki
   type: vless
-  server: 104.21.70.223
+  server: 95.182.95.178
   port: 443
-  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /vl/ERYN0G44hia16zhR
+    path: /fp
     headers:
-      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+      Host: ccc.010304.xyz
 - name: 🇨🇿 CZ 02 - yoki
   type: vless
-  server: 172.67.214.25
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 🇨🇿 CZ 03 - yoki
-  type: vless
   server: 95.182.95.178
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -46,34 +32,6 @@ proxies:
     path: /fp
     headers:
       Host: ccc.010304.xyz
-- name: 🇨🇿 CZ 04 - yoki
-  type: vless
-  server: 95.182.95.178
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: ccc.010304.xyz
-- name: 🇨🇿 CZ 05 - yoki
-  type: vless
-  server: 104.21.94.81
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: INDEX.Arcane509.Workers.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.arcane509.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,9 +39,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - yoki
   - 🇨🇿 CZ 02 - yoki
-  - 🇨🇿 CZ 03 - yoki
-  - 🇨🇿 CZ 04 - yoki
-  - 🇨🇿 CZ 05 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -91,8 +46,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - yoki
   - 🇨🇿 CZ 02 - yoki
-  - 🇨🇿 CZ 03 - yoki
-  - 🇨🇿 CZ 04 - yoki
-  - 🇨🇿 CZ 05 - yoki
 rules:
 - MATCH,PROXIES
