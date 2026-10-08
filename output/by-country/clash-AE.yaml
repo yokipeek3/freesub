@@ -6,17 +6,18 @@ log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - yoki
   type: vless
-  server: uae.unixzone.us
-  port: 22573
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: free.cndyw.ggff.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: uae.unixzone.us
+      Host: free.cndyw.ggff.net
 - name: 🇦🇪 阿联酋 (UAE) 02 - yoki
   type: vless
   server: uae.unixzone.us
@@ -32,6 +33,20 @@ proxies:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 03 - yoki
   type: vless
+  server: 147.78.0.186
+  port: 2053
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: free.cndyw.ggff.net
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.comfp=random
+    headers:
+      Host: free.cndyw.ggff.net
+- name: 🇦🇪 阿联酋 (UAE) 04 - yoki
+  type: vless
   server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
@@ -43,9 +58,75 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - yoki
+- name: 🇦🇪 阿联酋 (UAE) 05 - yoki
   type: vless
-  server: 84.235.244.108
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - yoki
+  type: vless
+  server: 162.159.153.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: rayan-007.maxima.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇦🇪 阿联酋 (UAE) 07 - yoki
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 - yoki
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 09 - yoki
+  type: vless
+  server: uae.unixzone.us
+  port: 22573
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 10 - yoki
+  type: vless
+  server: uae.unixzone.us
   port: 22573
   uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   udp: true
@@ -65,6 +146,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - yoki
   - 🇦🇪 阿联酋 (UAE) 03 - yoki
   - 🇦🇪 阿联酋 (UAE) 04 - yoki
+  - 🇦🇪 阿联酋 (UAE) 05 - yoki
+  - 🇦🇪 阿联酋 (UAE) 06 - yoki
+  - 🇦🇪 阿联酋 (UAE) 07 - yoki
+  - 🇦🇪 阿联酋 (UAE) 08 - yoki
+  - 🇦🇪 阿联酋 (UAE) 09 - yoki
+  - 🇦🇪 阿联酋 (UAE) 10 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -74,5 +161,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - yoki
   - 🇦🇪 阿联酋 (UAE) 03 - yoki
   - 🇦🇪 阿联酋 (UAE) 04 - yoki
+  - 🇦🇪 阿联酋 (UAE) 05 - yoki
+  - 🇦🇪 阿联酋 (UAE) 06 - yoki
+  - 🇦🇪 阿联酋 (UAE) 07 - yoki
+  - 🇦🇪 阿联酋 (UAE) 08 - yoki
+  - 🇦🇪 阿联酋 (UAE) 09 - yoki
+  - 🇦🇪 阿联酋 (UAE) 10 - yoki
 rules:
 - MATCH,PROXIES
