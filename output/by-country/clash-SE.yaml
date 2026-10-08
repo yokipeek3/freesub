@@ -4,9 +4,9 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 MY 01 - yoki
+- name: 🇸🇪 SE 01 - yoki
   type: vless
-  server: 216.173.67.59
+  server: 77.110.97.245
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -18,33 +18,33 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇲🇾 MY 02 - yoki
+- name: 🇸🇪 SE 02 - yoki
   type: vless
-  server: 216.173.67.59
+  server: 94.143.231.146
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ccc.010304.xyz
+  servername: sub.merky.top
   network: ws
   ws-opts:
-    path: /
+    path: /merky-connect/de6/
     headers:
-      Host: ccc.010304.xyz
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 MY 01 - yoki
-  - 🇲🇾 MY 02 - yoki
+  - 🇸🇪 SE 01 - yoki
+  - 🇸🇪 SE 02 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 MY 01 - yoki
-  - 🇲🇾 MY 02 - yoki
+  - 🇸🇪 SE 01 - yoki
+  - 🇸🇪 SE 02 - yoki
 rules:
 - MATCH,PROXIES

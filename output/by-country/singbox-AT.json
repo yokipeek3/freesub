@@ -6,18 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - yoki",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - yoki",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - yoki"
+        "🇦🇹 AT 01 - yoki",
+        "🇦🇹 AT 02 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - yoki",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - yoki",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - yoki"
+        "🇦🇹 AT 01 - yoki",
+        "🇦🇹 AT 02 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },
