@@ -15,8 +15,34 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇨🇭 CH 02 - yoki
+  type: vless
+  server: 185.237.225.47
+  port: 443
+  uuid: 489f1717-d3c7-4940-ad68-bdbdbab857f4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: x.m-90.xyz
+  network: ws
+  ws-opts:
+    path: t.me/TEAMNETGRATISCOL
+    headers:
+      Host: x.m-90.xyz
+- name: 🇨🇭 CH 03 - yoki
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 04 - yoki
   type: vless
   server: 208.69.78.217
   port: 2053
@@ -28,6 +54,30 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇨🇭 CH 05 - yoki
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 CH 06 - yoki
+  type: vless
+  server: 208.69.78.217
+  port: 2053
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +85,10 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - yoki
   - 🇨🇭 CH 02 - yoki
+  - 🇨🇭 CH 03 - yoki
+  - 🇨🇭 CH 04 - yoki
+  - 🇨🇭 CH 05 - yoki
+  - 🇨🇭 CH 06 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +96,9 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - yoki
   - 🇨🇭 CH 02 - yoki
+  - 🇨🇭 CH 03 - yoki
+  - 🇨🇭 CH 04 - yoki
+  - 🇨🇭 CH 05 - yoki
+  - 🇨🇭 CH 06 - yoki
 rules:
 - MATCH,PROXIES
