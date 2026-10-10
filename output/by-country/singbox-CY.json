@@ -6,24 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 CY 01 - yoki",
-        "🇨🇾 CY 02 - yoki",
-        "🇨🇾 CY 03 - yoki",
-        "🇨🇾 CY 04 - yoki",
-        "🇨🇾 CY 05 - yoki",
-        "🇨🇾 CY 06 - yoki"
+        "🇨🇾 CY 01 - yoki"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 CY 01 - yoki",
-        "🇨🇾 CY 02 - yoki",
-        "🇨🇾 CY 03 - yoki",
-        "🇨🇾 CY 04 - yoki",
-        "🇨🇾 CY 05 - yoki",
-        "🇨🇾 CY 06 - yoki"
+        "🇨🇾 CY 01 - yoki"
       ],
       "url": "https://www.google.com/generate_204"
     },

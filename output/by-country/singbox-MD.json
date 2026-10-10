@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇲🇩 MD 01 - yoki",
+        "🇲🇩 MD 02 - yoki",
+        "🇲🇩 MD 03 - yoki",
+        "🇲🇩 MD 04 - yoki",
+        "🇲🇩 MD 05 - yoki",
+        "🇲🇩 MD 06 - yoki",
+        "🇲🇩 MD 07 - yoki",
+        "🇲🇩 MD 08 - yoki",
+        "🇲🇩 MD 09 - yoki",
+        "🇲🇩 MD 10 - yoki",
+        "🇲🇩 MD 11 - yoki",
+        "🇲🇩 MD 12 - yoki",
+        "🇲🇩 MD 13 - yoki",
+        "🇲🇩 MD 14 - yoki",
+        "🇲🇩 MD 15 - yoki",
+        "🇲🇩 MD 16 - yoki",
+        "🇲🇩 MD 17 - yoki"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇲🇩 MD 01 - yoki",
+        "🇲🇩 MD 02 - yoki",
+        "🇲🇩 MD 03 - yoki",
+        "🇲🇩 MD 04 - yoki",
+        "🇲🇩 MD 05 - yoki",
+        "🇲🇩 MD 06 - yoki",
+        "🇲🇩 MD 07 - yoki",
+        "🇲🇩 MD 08 - yoki",
+        "🇲🇩 MD 09 - yoki",
+        "🇲🇩 MD 10 - yoki",
+        "🇲🇩 MD 11 - yoki",
+        "🇲🇩 MD 12 - yoki",
+        "🇲🇩 MD 13 - yoki",
+        "🇲🇩 MD 14 - yoki",
+        "🇲🇩 MD 15 - yoki",
+        "🇲🇩 MD 16 - yoki",
+        "🇲🇩 MD 17 - yoki"
+      ],
+      "url": "https://www.google.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
