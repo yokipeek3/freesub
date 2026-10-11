@@ -6,19 +6,12 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - yoki
   type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 02 - yoki
-  type: ss
   server: 20.234.97.18
   port: 443
   cipher: chacha20-ietf-poly1305
   password: GayYa2V7pUbJBfKu
   udp: true
-- name: 🇮🇪 IE 03 - yoki
+- name: 🇮🇪 IE 02 - yoki
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -32,6 +25,13 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
+- name: 🇮🇪 IE 03 - yoki
+  type: ss
+  server: 20.123.1.55
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: YF329KNGVTUZ1qrH
+  udp: true
 - name: 🇮🇪 IE 04 - yoki
   type: ss
   server: 20.123.1.55
