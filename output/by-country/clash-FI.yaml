@@ -13,16 +13,43 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇫🇮 FI 02 - yoki
-  type: ss
-  server: 185.103.110.68
-  port: 18283
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 83914feb-8d46-45d5-9683-132ff1d86d80
   udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+    headers:
+      Host: rb24.ir
 - name: 🇫🇮 FI 03 - yoki
   type: ss
   server: 185.103.110.66
   port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 04 - yoki
+  type: ss
+  server: 185.103.110.66
+  port: 18280
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  udp: true
+- name: 🇫🇮 FI 05 - yoki
+  type: ss
+  server: 45.149.114.171
+  port: 777
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  udp: true
+- name: 🇫🇮 FI 06 - yoki
+  type: ss
+  server: 185.103.110.68
+  port: 18283
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   udp: true
@@ -34,6 +61,9 @@ proxy-groups:
   - 🇫🇮 FI 01 - yoki
   - 🇫🇮 FI 02 - yoki
   - 🇫🇮 FI 03 - yoki
+  - 🇫🇮 FI 04 - yoki
+  - 🇫🇮 FI 05 - yoki
+  - 🇫🇮 FI 06 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -42,5 +72,8 @@ proxy-groups:
   - 🇫🇮 FI 01 - yoki
   - 🇫🇮 FI 02 - yoki
   - 🇫🇮 FI 03 - yoki
+  - 🇫🇮 FI 04 - yoki
+  - 🇫🇮 FI 05 - yoki
+  - 🇫🇮 FI 06 - yoki
 rules:
 - MATCH,PROXIES
