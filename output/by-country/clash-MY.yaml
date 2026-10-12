@@ -15,7 +15,7 @@ proxies:
   servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
 - name: 🇲🇾 MY 02 - yoki
@@ -44,20 +44,6 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
-- name: 🇲🇾 MY 04 - yoki
-  type: vless
-  server: 216.173.67.59
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,7 +52,6 @@ proxy-groups:
   - 🇲🇾 MY 01 - yoki
   - 🇲🇾 MY 02 - yoki
   - 🇲🇾 MY 03 - yoki
-  - 🇲🇾 MY 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -75,6 +60,5 @@ proxy-groups:
   - 🇲🇾 MY 01 - yoki
   - 🇲🇾 MY 02 - yoki
   - 🇲🇾 MY 03 - yoki
-  - 🇲🇾 MY 04 - yoki
 rules:
 - MATCH,PROXIES
