@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - yoki
-  type: ss
-  server: 20.234.97.18
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: GayYa2V7pUbJBfKu
-  udp: true
-- name: 🇮🇪 IE 02 - yoki
   type: vless
   server: 23.95.225.10
   port: 8443
@@ -25,19 +18,12 @@ proxies:
     path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-- name: 🇮🇪 IE 03 - yoki
+- name: 🇮🇪 IE 02 - yoki
   type: ss
-  server: 20.123.1.55
+  server: 20.234.97.18
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
-  udp: true
-- name: 🇮🇪 IE 04 - yoki
-  type: ss
-  server: 20.123.1.55
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: YF329KNGVTUZ1qrH
+  password: GayYa2V7pUbJBfKu
   udp: true
 proxy-groups:
 - name: PROXIES
@@ -46,8 +32,6 @@ proxy-groups:
   - AUTO
   - 🇮🇪 IE 01 - yoki
   - 🇮🇪 IE 02 - yoki
-  - 🇮🇪 IE 03 - yoki
-  - 🇮🇪 IE 04 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,7 +39,5 @@ proxy-groups:
   proxies:
   - 🇮🇪 IE 01 - yoki
   - 🇮🇪 IE 02 - yoki
-  - 🇮🇪 IE 03 - yoki
-  - 🇮🇪 IE 04 - yoki
 rules:
 - MATCH,PROXIES
