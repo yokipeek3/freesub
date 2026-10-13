@@ -5,34 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  type: vless
-  server: 91.215.43.248
-  port: 443
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: my.kempekl.online
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  type: vless
-  server: 172.67.203.158
-  port: 443
-  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: 12YGbaE0K3gN0z0f.mEhrsHADHaDdadI8.WorkerS.DEv
-  network: ws
-  ws-opts:
-    path: /vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR
-    headers:
-      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - yoki
   type: ss
   server: 130.49.189.158
   port: 43558
@@ -45,15 +17,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 03 - yoki
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 02 - yoki
-  - 🇷🇺 俄罗斯 (Russia) 03 - yoki
 rules:
 - MATCH,PROXIES
